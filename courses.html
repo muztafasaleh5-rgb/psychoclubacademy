@@ -7,117 +7,87 @@
   <meta name="description" content="كورسات Psycho Club Academy: برامج تدريبية نفسية وإكلينيكية." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-courses">
 
 <div class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
     <div class="links">
-      <a class="link" data-nav href="about.html">عن المنصة</a>
-      <a class="link" data-nav href="articles.html">المقالات</a>
-      <a class="link" data-nav href="library.html">المكتبة</a>
-      <a class="link" data-nav href="contact.html">تواصل</a>
+      <a class="link" href="index.html">الرئيسية</a>
+      <a class="link" href="books.html">الكتب</a>
+      <a class="link" href="articles.html">المقالات العلمية</a>
+      <a class="link" href="library.html">المكتبة</a>
+      <a class="link" href="contact.html">تواصل معنا</a>
     </div>
-    <a class="btn ghost" href="index.html">الرئيسية</a>
   </div>
 </div>
 
 <div class="container">
 
-  <div class="layout-2">
-    <aside class="sidebar">
-      <div class="kicker">تصنيفات</div>
-      <div class="list">
-        <div class="item"><b>Beginner</b><div class="meta">ابدأ من الصفر</div></div>
-        <div class="item"><b>Intermediate</b><div class="meta">تعميق المهارات</div></div>
-        <div class="item"><b>Advanced</b><div class="meta">حالات أعقد</div></div>
-        <div class="item"><b>CBT</b><div class="meta">أدوات وتطبيق</div></div>
-        <div class="item"><b>Clinical</b><div class="meta">تفكير إكلينيكي</div></div>
-      </div>
-      <div class="hr"></div>
+  <div class="feature">
+    <span class="badge">Courses • Protected</span>
+    <h1 class="h1" style="margin-top:12px">الكورسات</h1>
+    <p class="p">اختر البرنامج المناسب لك. هذه الصفحة مقفولة بكلمة سر للمشتركين.</p>
+
+    <!-- زر الكورسات موجود هنا فقط -->
+    <div class="row">
       <a class="btn primary" href="contact.html">اشترك الآن</a>
-    </aside>
+      <button class="btn ghost" onclick="pcaLock('courses'); location.reload();">قفل الصفحة</button>
+    </div>
 
-    <main class="main">
-      <div class="card compact">
-        <span class="badge">Programs</span>
-        <div class="h1" style="margin-top:12px">الكورسات</div>
-        <div class="p">اختر البرنامج المناسب لك وابدأ مسارك التدريبي.</div>
-        <div class="row">
-          <span class="tag">Beginner</span>
-          <span class="tag">Intermediate</span>
-          <span class="tag">Advanced</span>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card compact">
-          <b>برنامج إعداد الأخصائي النفسي</b>
-          <div class="meta">برنامج متكامل يجهزك للممارسة المهنية (Beginner → Advanced).</div>
-          <div class="row">
-            <span class="tag">Clinical</span>
-            <span class="tag">Core</span>
-          </div>
-          <div class="row">
-            <a class="btn primary" href="course-setup.html">الدخول للبرنامج</a>
-          </div>
-        </div>
-
-        <div class="card compact">
-          <b>CBT Foundations & Clinical Tools</b>
-          <div class="meta">أساسيات CBT وتطبيقاته العملية داخل الجلسة.</div>
-          <div class="row">
-            <span class="tag">CBT</span>
-            <span class="tag">Practice</span>
-          </div>
-          <div class="row">
-            <a class="btn ghost" href="#">قريبًا</a>
-          </div>
-        </div>
-
-        <div class="card compact">
-          <b>Clinical Case Formulation</b>
-          <div class="meta">تدريب عملي على الفورميوليشن وربطه بالخطة العلاجية.</div>
-          <div class="row">
-            <span class="tag">Advanced</span>
-          </div>
-          <div class="row">
-            <a class="btn ghost" href="#">قريبًا</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card compact">
-        <div class="kicker">ملاحظة</div>
-        <div class="small" style="margin-top:10px">
-          هذه الصفحة مقفولة بكلمة سر. في حالة عدم امتلاكها تواصل معنا عبر صفحة التواصل.
-        </div>
-      </div>
-    </main>
+    <div class="chips">
+      <span class="chip">Beginner</span>
+      <span class="chip">Intermediate</span>
+      <span class="chip">Advanced</span>
+      <span class="chip">CBT</span>
+      <span class="chip">Clinical</span>
+    </div>
   </div>
 
-  <div class="footer">
+  <div class="section grid">
+    <div class="card pad">
+      <div class="kicker">Program</div>
+      <h2 class="h2" style="margin-top:8px">برنامج إعداد الأخصائي النفسي</h2>
+      <div class="meta">برنامج متكامل يجهزك للممارسة المهنية (Beginner → Advanced).</div>
+      <div class="row">
+        <a class="btn primary" href="course-setup.html">الدخول للبرنامج</a>
+      </div>
+    </div>
+
+    <div class="card pad">
+      <div class="kicker">Program</div>
+      <h2 class="h2" style="margin-top:8px">CBT Foundations & Clinical Tools</h2>
+      <div class="meta">أساسيات CBT + تطبيقات عملية داخل الجلسة.</div>
+      <div class="row"><a class="btn ghost" href="#">قريبًا</a></div>
+    </div>
+
+    <div class="card pad">
+      <div class="kicker">Program</div>
+      <h2 class="h2" style="margin-top:8px">Clinical Case Formulation</h2>
+      <div class="meta">فورميوليشن عملي وربطه بالخطة العلاجية.</div>
+      <div class="row"><a class="btn ghost" href="#">قريبًا</a></div>
+    </div>
+  </div>
+
+  <div class="section footer">
     <div class="footer-grid">
       <div>
-        <div class="kicker">Psycho Club Academy</div>
-        <div class="small">كورسات منظمة + تجربة منصة احترافية.</div>
+        <div class="kicker">ملاحظة</div>
+        <div class="small">لو ماعندكش كلمة السر، تواصل معنا من صفحة “تواصل معنا”.</div>
       </div>
     </div>
   </div>
 
 </div>
 
-<script src="app.js"></script>
-
-<!-- 🔒 Password gate (courses only) -->
 <script src="gate.js"></script>
 <script>
+  // قفل صفحة الكورسات فقط
   pcaProtectPage({
     gateKey: "courses",
     password: "COURSES-2026",
     title: "صفحة الكورسات — دخول مخصص"
   });
 </script>
-
 </body>
 </html>
