@@ -1,27 +1,24 @@
 /* =========================
-   Psycho Club Academy — Theme 3: Cyber Gradient
-   Flashy, modern, gradient-glow look
+   Psycho Club Academy — Base + Page-Specific Designs
+   Each page gets a unique look via body class:
+   .page-home .page-courses .page-books .page-articles .page-library .page-about .page-contact
    ========================= */
 
 :root{
-  --bg0:#060814;
-  --bg1:#0A0F2A;
-
-  --text:#F2F6FF;
-  --muted: rgba(242,246,255,.72);
-  --muted2: rgba(242,246,255,.54);
-
+  --bg0:#070A12;
+  --bg1:#0B1220;
+  --text:#F5F7FF;
+  --muted:rgba(245,247,255,.72);
+  --muted2:rgba(245,247,255,.52);
   --card: rgba(255,255,255,.06);
-  --card2: rgba(255,255,255,.10);
   --border: rgba(255,255,255,.14);
-
-  --primary:#A855F7;          /* purple */
-  --primary2: rgba(168,85,247,.18);
-  --secondary:#22D3EE;        /* cyan */
-  --secondary2: rgba(34,211,238,.14);
-
-  --shadow: 0 20px 70px rgba(0,0,0,.6);
+  --shadow: 0 18px 60px rgba(0,0,0,.55);
   --radius: 20px;
+
+  --primary:#2EE59D;
+  --primary2: rgba(46,229,157,.16);
+  --secondary:#4EA1FF;
+  --secondary2: rgba(78,161,255,.14);
 }
 
 *{box-sizing:border-box}
@@ -30,42 +27,45 @@ body{
   margin:0;
   color:var(--text);
   background:
-    radial-gradient(1200px 640px at 12% -10%, var(--primary2), transparent 62%),
-    radial-gradient(980px 560px at 92% 10%, var(--secondary2), transparent 58%),
-    radial-gradient(620px 420px at 40% 120%, rgba(255,255,255,.06), transparent 70%),
+    radial-gradient(1100px 600px at 10% -10%, var(--primary2), transparent 60%),
+    radial-gradient(900px 540px at 92% 12%, var(--secondary2), transparent 55%),
     linear-gradient(180deg, var(--bg0), var(--bg1));
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Cairo", Arial;
 }
 
-.container{width:min(1120px, 92vw); margin:0 auto; padding:16px 0}
+/* Global layout */
+.container{width:min(1120px, 92vw); margin:0 auto; padding:18px 0}
+.section{margin-top:14px}
 
-.h1{font-size:30px; font-weight:950; letter-spacing:.2px}
-.p{color:var(--muted); line-height:1.95; margin-top:8px}
-.kicker{
-  font-size:12px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--muted2);
-  font-weight:900;
-}
+/* Typography */
+.h1{font-size:32px; font-weight:950; letter-spacing:.2px; margin:0}
+.h2{font-size:20px; font-weight:950; margin:0}
+.p{color:var(--muted); line-height:1.95; margin:10px 0 0}
 .small{color:var(--muted2); font-size:13px; line-height:1.7}
+.kicker{
+  font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted2); font-weight:900;
+}
 .badge{
   display:inline-flex; align-items:center; gap:8px;
   padding:6px 10px; border-radius:999px;
   border:1px solid var(--border);
-  background: rgba(255,255,255,.04);
+  background: rgba(255,255,255,.03);
   color:var(--muted);
   font-size:12px; font-weight:900;
 }
 
-/* NAV */
+/* NAV (موحد وخفيف بدون زر ثابت) */
 .nav{
   position:sticky; top:0; z-index:50;
   backdrop-filter: blur(12px);
-  background: rgba(6,8,20,.55);
-  border-bottom:1px solid rgba(255,255,255,.10);
+  background: rgba(7,10,18,.55);
+  border-bottom:1px solid rgba(255,255,255,.09);
 }
-.nav-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0}
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:10px 0;
+}
 .brand{
   display:flex; align-items:center; gap:10px;
   text-decoration:none; color:var(--text); font-weight:950;
@@ -73,9 +73,9 @@ body{
 .logo{
   width:36px; height:36px; border-radius:14px;
   background:
-    radial-gradient(14px 14px at 30% 30%, rgba(255,255,255,.82), transparent 60%),
-    linear-gradient(135deg, var(--primary), rgba(34,211,238,.85));
-  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+    radial-gradient(14px 14px at 30% 30%, rgba(255,255,255,.75), transparent 60%),
+    linear-gradient(135deg, var(--primary), rgba(78,161,255,.75));
+  box-shadow: 0 12px 24px rgba(0,0,0,.35);
 }
 .links{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
 .link{
@@ -83,102 +83,182 @@ body{
   font-weight:850; font-size:14px;
   padding:8px 10px; border-radius:12px;
 }
-.link:hover{background: rgba(255,255,255,.08); color:var(--text)}
+.link:hover{background: rgba(255,255,255,.06); color:var(--text)}
 
 /* Buttons */
+.row{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:12px}
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  padding:10px 12px; border-radius:16px;
+  padding:10px 12px; border-radius:14px;
   border:1px solid var(--border);
   background: rgba(255,255,255,.05);
-  color:var(--text);
-  text-decoration:none;
+  color:var(--text); text-decoration:none;
   font-weight:950;
-  cursor:pointer;
+  cursor:pointer; user-select:none;
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
-.btn:hover{background: rgba(255,255,255,.10); transform: translateY(-1px)}
+.btn:hover{background: rgba(255,255,255,.09); transform: translateY(-1px)}
 .btn.primary{
-  border-color: rgba(168,85,247,.60);
-  background: linear-gradient(180deg, rgba(168,85,247,.26), rgba(34,211,238,.14));
-  box-shadow: 0 14px 40px rgba(0,0,0,.35), 0 0 0 4px var(--primary2);
+  border-color: rgba(46,229,157,.55);
+  background: linear-gradient(180deg, rgba(46,229,157,.22), rgba(46,229,157,.12));
+  box-shadow: 0 10px 28px rgba(0,0,0,.25), 0 0 0 4px var(--primary2);
 }
-.btn.primary:hover{background: rgba(168,85,247,.25)}
 .btn.ghost{background: transparent}
 
-/* Cards */
+/* Cards & grids */
 .card{
   border-radius: var(--radius);
   border:1px solid var(--border);
   background: var(--card);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 }
 .pad{padding:16px}
-.card.compact{padding:14px; border-radius:20px; box-shadow: 0 14px 44px rgba(0,0,0,.45)}
+.hr{height:1px; background: rgba(255,255,255,.10); margin:14px 0}
+.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
+.grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr} .links{display:none}}
 
-/* Items */
-.list{display:grid; gap:10px; margin-top:12px}
-.item{
-  padding:12px; border-radius:18px;
-  border:1px solid var(--border);
+/* Page-specific “personalities” */
+.page-home{
+  --primary:#22D3EE; --primary2: rgba(34,211,238,.16);
+  --secondary:#A855F7; --secondary2: rgba(168,85,247,.14);
+}
+.page-courses{
+  --primary:#2EE59D; --primary2: rgba(46,229,157,.16);
+  --secondary:#4EA1FF; --secondary2: rgba(78,161,255,.14);
+}
+.page-books{
+  --primary:#F7C46C; --primary2: rgba(247,196,108,.18);
+  --secondary:#FF5C7A; --secondary2: rgba(255,92,122,.14);
+}
+.page-articles{
+  --primary:#60A5FA; --primary2: rgba(96,165,250,.16);
+  --secondary:#34D399; --secondary2: rgba(52,211,153,.14);
+}
+.page-library{
+  --primary:#A78BFA; --primary2: rgba(167,139,250,.18);
+  --secondary:#22D3EE; --secondary2: rgba(34,211,238,.14);
+}
+.page-about{
+  --primary:#34D399; --primary2: rgba(52,211,153,.16);
+  --secondary:#FBBF24; --secondary2: rgba(251,191,36,.14);
+}
+.page-contact{
+  --primary:#FB7185; --primary2: rgba(251,113,133,.18);
+  --secondary:#60A5FA; --secondary2: rgba(96,165,250,.14);
+}
+
+/* Unique components */
+.heroBanner{
+  position:relative;
+  overflow:hidden;
+}
+.heroBanner:before{
+  content:"";
+  position:absolute; inset:-60px -60px auto auto;
+  width:260px; height:260px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.22), transparent 55%),
+              radial-gradient(circle at 60% 60%, var(--primary2), transparent 60%);
+  border-radius: 60px;
+  transform: rotate(12deg);
+  filter: blur(.2px);
+}
+.heroBanner:after{
+  content:"";
+  position:absolute; inset:auto auto -90px -90px;
+  width:320px; height:320px;
+  background: radial-gradient(circle at 30% 30%, var(--secondary2), transparent 60%);
+  border-radius: 80px;
+  transform: rotate(-10deg);
+}
+.heroBanner > *{position:relative; z-index:1}
+
+/* Home tiles */
+.tileLink{
+  text-decoration:none; color:inherit;
+  display:block; padding:16px;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.05);
 }
-.item:hover{background: rgba(255,255,255,.09)}
-.item b{font-weight:950}
-
-/* Tags */
-.tag{
-  display:inline-flex; padding:6px 10px; border-radius:999px;
-  border:1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
-  color:var(--muted);
-  font-size:12px; font-weight:900;
+.tileLink:hover{background: rgba(255,255,255,.09)}
+.iconDot{
+  width:42px;height:42px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.05);
+  font-size:18px;
 }
-.row{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:12px}
-.hr{height:1px; background: rgba(255,255,255,.12); margin:14px 0}
+
+/* Courses: filter chips */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.chip{
+  padding:8px 10px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.05);
+  color:var(--muted); font-weight:850; font-size:13px;
+}
+
+/* Books: bookshelf */
+.shelf{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:14px;
+}
+.book{
+  padding:16px; border-radius:22px;
+  border:1px solid rgba(255,255,255,.14);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+}
+.bookCover{
+  height:110px;border-radius:18px;
+  border:1px solid rgba(255,255,255,.14);
+  background:
+    radial-gradient(160px 80px at 20% 20%, rgba(255,255,255,.20), transparent 60%),
+    linear-gradient(135deg, var(--primary2), rgba(255,255,255,.04));
+}
+
+/* Articles: magazine */
+.feature{
+  padding:18px;border-radius:26px;
+  border:1px solid rgba(255,255,255,.14);
+  background:
+    radial-gradient(700px 260px at 20% 0%, var(--primary2), transparent 60%),
+    rgba(255,255,255,.05);
+}
+.postCard{
+  display:block;text-decoration:none;color:inherit;
+  padding:16px;border-radius:22px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+}
+.postCard:hover{background: rgba(255,255,255,.09)}
 .meta{color:var(--muted); font-size:13px; line-height:1.85; margin-top:8px}
 
-/* Layout */
-.layout-2{display:grid; grid-template-columns: 310px 1fr; gap:14px; margin-top:12px}
-.sidebar{
-  padding:14px; border-radius:20px;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.05);
-  box-shadow: 0 12px 40px rgba(0,0,0,.35);
-}
-.main{display:grid; gap:14px}
-.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
-.tile{
-  padding:14px; border-radius:20px;
-  border:1px solid var(--border);
+/* Library: downloads */
+.fileCard{
+  padding:16px;border-radius:22px;
+  border:1px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.05);
 }
 
-/* Forms */
-.input{
-  width:100%;
-  padding:12px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
-  color:var(--text);
-  outline:none;
+/* About: timeline */
+.timeline{display:grid;gap:12px;margin-top:12px}
+.step{
+  padding:14px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
 }
-.input:focus{border-color: rgba(34,211,238,.65); box-shadow: 0 0 0 4px var(--secondary2)}
+
+/* Contact: split */
+.contactGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:12px}
+@media (max-width:900px){.contactGrid{grid-template-columns:1fr}}
 
 /* Footer */
-.footer{margin-top:14px}
 .footer-grid{
   display:grid; grid-template-columns:1fr; gap:10px;
   padding:14px;
-  border-radius:20px;
+  border-radius:22px;
   border:1px solid rgba(255,255,255,.11);
   background: rgba(255,255,255,.05);
-}
-
-/* Responsive */
-@media (max-width: 900px){
-  .layout-2{grid-template-columns: 1fr}
-  .links{display:none}
 }
