@@ -3,10 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>الكتب | Psycho Club Academy</title>
-  <meta name="description" content="كتب Psycho Club Academy: كتب ومراجع وتلخيصات." />
+  <title>كتب مجانية عامة | Psycho Club Academy</title>
+  <meta name="description" content="مكتبة كتب مجانية عامة في علم النفس والصحة النفسية — روابط للمصادر الأصلية مع احترام حقوق المؤلفين." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Page-only enhancements (books unique look) */
+    .booksTop{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:12px}
+    @media (max-width:900px){.booksTop{grid-template-columns:1fr}}
+    .notice{
+      padding:14px;border-radius:22px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      line-height:1.9;
+      color:var(--muted);
+      font-size:13.5px;
+    }
+    .searchRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btnChip{
+      padding:10px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+      font-weight:900;
+      cursor:pointer;
+    }
+    .btnChip.active{
+      border-color: rgba(255,255,255,.30);
+      box-shadow: 0 0 0 4px var(--primary2);
+      background: rgba(255,255,255,.08);
+    }
+    .bookGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .bookCard{
+      padding:16px;border-radius:22px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+    }
+    .bookCover{
+      height:110px;border-radius:18px;
+      border:1px solid rgba(255,255,255,.14);
+      background:
+        radial-gradient(160px 80px at 20% 20%, rgba(255,255,255,.20), transparent 60%),
+        linear-gradient(135deg, var(--primary2), rgba(255,255,255,.04));
+      display:flex;align-items:flex-end;justify-content:flex-start;
+      padding:10px;
+      color:rgba(255,255,255,.85);
+      font-weight:950;
+      font-size:12px;
+    }
+    .bookTitle{font-weight:950;font-size:18px;margin-top:12px}
+    .bookMeta{color:var(--muted);font-size:13px;line-height:1.8;margin-top:8px}
+    .miniRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .pill{
+      display:inline-flex;padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-size:12px;
+      font-weight:850;
+    }
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .aBtn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:10px 12px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--text);text-decoration:none;font-weight:950;
+    }
+    .aBtn:hover{background: rgba(255,255,255,.09)}
+    .aBtn.primary{
+      border-color: rgba(46,229,157,.55);
+      background: linear-gradient(180deg, rgba(46,229,157,.22), rgba(46,229,157,.12));
+      box-shadow: 0 10px 28px rgba(0,0,0,.25), 0 0 0 4px var(--primary2);
+    }
+  </style>
 </head>
+
 <body class="page-books">
 
 <div class="nav">
@@ -14,6 +85,7 @@
     <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
     <div class="links">
       <a class="link" href="index.html">الرئيسية</a>
+      <a class="link" href="courses.html">الكورسات</a>
       <a class="link" href="articles.html">المقالات العلمية</a>
       <a class="link" href="library.html">المكتبة</a>
       <a class="link" href="about.html">من نحن</a>
@@ -23,49 +95,153 @@
 </div>
 
 <div class="container">
+
   <div class="card pad heroBanner">
-    <span class="badge">Books</span>
-    <h1 class="h1" style="margin-top:12px">الكتب</h1>
-    <p class="p">هنا صفحة الكتب بشكل “رفوف” — كل كتاب له وصف ورابط (تحميل/شراء) حسب ما تختار.</p>
+    <span class="badge">Free Books • External Sources</span>
+    <h1 class="h1" style="margin-top:12px">كتب مجانية عامة</h1>
+    <p class="p">
+      هذه الصفحة تجمع كتبًا مجانية متاحة عبر الإنترنت مع روابط للمصادر الأصلية — مع احترام حقوق المؤلفين والناشرين.
+    </p>
   </div>
 
-  <div class="section shelf">
-    <div class="book">
-      <div class="bookCover"></div>
-      <h2 class="h2" style="margin-top:12px">كتاب 1 — (ضع العنوان)</h2>
-      <div class="meta">وصف مختصر + لمن مناسب + ماذا سيستفيد القارئ.</div>
+  <div class="booksTop">
+    <div class="notice">
+      <b>تنبيه حقوق الملكية:</b><br>
+      • كل الحقوق تعود إلى المؤلفين/الناشرين.<br>
+      • لا نستضيف ملفات الكتب على الموقع إلا إذا كانت (Public Domain / Creative Commons) أو بإذن.<br>
+      • الروابط أدناه تقود إلى <b>المصادر الأصلية</b> (ناشر/منصة رسمية/أرشيف موثوق).<br>
+      <div class="hr"></div>
+      لو وجدت رابطًا يخالف الحقوق: تواصل معنا وسنقوم بإزالته فورًا.
       <div class="row">
-        <a class="btn primary" href="#">تحميل / شراء</a>
-        <a class="btn ghost" href="#">قراءة نبذة</a>
+        <a class="btn primary" href="contact.html">إبلاغ/تواصل</a>
+        <a class="btn ghost" href="library.html">أدوات مجانية</a>
       </div>
     </div>
 
-    <div class="book">
-      <div class="bookCover"></div>
-      <h2 class="h2" style="margin-top:12px">كتاب 2 — (ضع العنوان)</h2>
-      <div class="meta">وصف مختصر + التصنيف (CBT/تشخيص/فورميوليشن…)</div>
-      <div class="row">
-        <a class="btn primary" href="#">تحميل / شراء</a>
-        <a class="btn ghost" href="#">قراءة نبذة</a>
+    <div class="card pad">
+      <div class="kicker">بحث وتصنيف</div>
+
+      <div class="searchRow">
+        <input id="q" class="input" placeholder="ابحث بالعنوان/المؤلف/الموضوع (مثال: CBT, Attachment, Trauma…)" />
+      </div>
+
+      <div class="searchRow" style="margin-top:10px">
+        <button class="btnChip active" data-filter="all">الكل</button>
+        <button class="btnChip" data-filter="cbt">CBT</button>
+        <button class="btnChip" data-filter="assessment">Assessment</button>
+        <button class="btnChip" data-filter="trauma">Trauma</button>
+        <button class="btnChip" data-filter="general">General</button>
+      </div>
+
+      <div class="small" style="margin-top:10px">
+        *أضف الكتب تدريجيًا. كل كتاب بطاقة مستقلة.*
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKS GRID -->
+  <div class="bookGrid" id="books">
+
+    <!-- Example Book Card 1 -->
+    <div class="bookCard" data-tags="cbt general">
+      <div class="bookCover">External Link</div>
+      <div class="bookTitle">عنوان كتاب (مثال)</div>
+      <div class="bookMeta">
+        <b>المؤلف:</b> اسم المؤلف<br>
+        <b>اللغة:</b> عربي/إنجليزي<br>
+        <b>وصف:</b> سطرين عن محتوى الكتاب ولماذا هو مفيد.
+      </div>
+      <div class="miniRow">
+        <span class="pill">CBT</span>
+        <span class="pill">Beginner</span>
+        <span class="pill">Free</span>
+      </div>
+      <div class="actions">
+        <a class="aBtn primary" target="_blank" rel="noopener" href="#">المصدر الأصلي</a>
+        <a class="aBtn" target="_blank" rel="noopener" href="#">صفحة تعريف/ملخص</a>
       </div>
     </div>
 
-    <div class="book">
-      <div class="bookCover"></div>
-      <h2 class="h2" style="margin-top:12px">كتاب 3 — (ضع العنوان)</h2>
-      <div class="meta">وصف مختصر.</div>
-      <div class="row">
-        <a class="btn primary" href="#">تحميل / شراء</a>
-        <a class="btn ghost" href="#">قراءة نبذة</a>
+    <!-- Example Book Card 2 -->
+    <div class="bookCard" data-tags="assessment general">
+      <div class="bookCover">External Link</div>
+      <div class="bookTitle">عنوان كتاب (مثال 2)</div>
+      <div class="bookMeta">
+        <b>المؤلف:</b> اسم المؤلف<br>
+        <b>اللغة:</b> English<br>
+        <b>وصف:</b> تعريف سريع بمحتوى الكتاب.
+      </div>
+      <div class="miniRow">
+        <span class="pill">Assessment</span>
+        <span class="pill">Reference</span>
+      </div>
+      <div class="actions">
+        <a class="aBtn primary" target="_blank" rel="noopener" href="#">المصدر الأصلي</a>
       </div>
     </div>
+
+    <!-- Example Book Card 3 -->
+    <div class="bookCard" data-tags="trauma general">
+      <div class="bookCover">External Link</div>
+      <div class="bookTitle">عنوان كتاب (Trauma مثال)</div>
+      <div class="bookMeta">
+        <b>المؤلف:</b> اسم المؤلف<br>
+        <b>اللغة:</b> عربي<br>
+        <b>وصف:</b> كتاب تمهيدي/مرجعي في الصدمة (مثال).
+      </div>
+      <div class="miniRow">
+        <span class="pill">Trauma</span>
+        <span class="pill">Intermediate</span>
+      </div>
+      <div class="actions">
+        <a class="aBtn primary" target="_blank" rel="noopener" href="#">المصدر الأصلي</a>
+      </div>
+    </div>
+
   </div>
 
   <div class="section footer">
     <div class="footer-grid">
-      <div><div class="kicker">Psycho Club Academy</div><div class="small">صفحة كتب بتصميم مختلف عن باقي الصفحات.</div></div>
+      <div>
+        <div class="kicker">Psycho Club Academy</div>
+        <div class="small">مكتبة كتب عامة بروابط للمصادر الأصلية — احترامًا لحقوق المؤلفين.</div>
+      </div>
     </div>
   </div>
+
 </div>
+
+<script>
+  // Search + filter for books
+  const q = document.getElementById('q');
+  const booksWrap = document.getElementById('books');
+  const books = Array.from(booksWrap.querySelectorAll('.bookCard'));
+  const chips = Array.from(document.querySelectorAll('.btnChip[data-filter]'));
+  let active = 'all';
+
+  function apply(){
+    const term = (q.value||'').trim().toLowerCase();
+    books.forEach(b=>{
+      const tags = (b.getAttribute('data-tags')||'').toLowerCase();
+      const text = (b.textContent||'').toLowerCase();
+      const okTag = active==='all' ? true : tags.includes(active);
+      const okTerm = term ? (tags.includes(term) || text.includes(term)) : true;
+      b.style.display = (okTag && okTerm) ? '' : 'none';
+    });
+  }
+
+  chips.forEach(c=>{
+    c.addEventListener('click', ()=>{
+      chips.forEach(x=>x.classList.remove('active'));
+      c.classList.add('active');
+      active = c.getAttribute('data-filter');
+      apply();
+    });
+  });
+
+  q.addEventListener('input', apply);
+  apply();
+</script>
+
 </body>
 </html>
