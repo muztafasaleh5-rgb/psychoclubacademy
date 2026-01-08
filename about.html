@@ -4,36 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>عن المنصة | Psycho Club Academy</title>
-  <meta name="description" content="تعرف على Psycho Club Academy: رؤية المنصة، لمن هي، وكيف تساعدك في بناء مهارات إكلينيكية حقيقية." />
+  <meta name="description" content="تعرف على Psycho Club Academy: رؤية المنصة، لمن هي، وكيف تساعدك في بناء مهارات إكلينيكية." />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-    @media (max-width:900px){.grid2{grid-template-columns:1fr}}
-    .box{padding:14px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
-    .box b{font-family:Inter, Cairo, system-ui}
-    .meta{color:var(--muted);font-size:13px;line-height:1.85;margin-top:8px}
-    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:13px}
-    .list{display:grid;gap:10px;margin-top:12px}
-    .item{padding:12px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
-    .item b{font-family:Inter, Cairo, system-ui}
-    .hr{height:1px;background:rgba(255,255,255,.10);margin:14px 0}
-    .ltr{direction:ltr;font-family:Inter, system-ui}
-  </style>
 </head>
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <div class="logo"></div>
-      <span>Psycho Club Academy</span>
-    </a>
+    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
     <div class="links">
-      <a class="link" data-nav href="index.html">الرئيسية</a>
       <a class="link" data-nav href="about.html">عن المنصة</a>
-      <a class="link" data-nav href="articles.html">مقالات</a>
+      <a class="link" data-nav href="articles.html">المقالات</a>
       <a class="link" data-nav href="library.html">المكتبة</a>
       <a class="link" data-nav href="contact.html">تواصل</a>
     </div>
@@ -43,134 +24,69 @@
 
 <div class="container">
 
-  <!-- HERO -->
   <div class="card pad">
-    <span class="badge">About • Psycho Club Academy</span>
+    <span class="badge">About</span>
     <div class="h1" style="margin-top:12px">عن المنصة</div>
     <div class="p">
       Psycho Club Academy منصة تدريبية نفسية تركّز على بناء مهارات إكلينيكية حقيقية:
       <b>تفكير إكلينيكي</b> + <b>صياغة حالة</b> + <b>تطبيق عملي</b> + <b>توثيق مهني</b>.
     </div>
-
     <div class="row">
-      <span class="pill">🧠 Evidence-Based Approach</span>
-      <span class="pill">🧩 Case Formulation</span>
-      <span class="pill">🧾 Documentation & Templates</span>
-      <span class="pill">🤝 Community & Support</span>
+      <span class="tag">Evidence-Based</span>
+      <span class="tag">Case Formulation</span>
+      <span class="tag">Templates</span>
+      <span class="tag">Practice</span>
     </div>
-
     <div class="row">
       <a class="btn primary" href="courses.html">استكشف الكورسات</a>
-      <a class="btn ghost" href="contact.html">تواصل للاشتراك</a>
-    </div>
-
-    <div class="meta ltr" style="margin-top:10px">
-      Professional training for psychological practitioners — from foundations to advanced clinical thinking.
+      <a class="btn ghost" href="contact.html">تواصل</a>
     </div>
   </div>
 
-  <!-- WHO + WHAT -->
-  <div class="grid2">
-
-    <div class="box">
+  <div class="layout-2">
+    <aside class="sidebar">
       <div class="kicker">لمن هذه المنصة؟</div>
-      <div class="meta">
-        مناسبة لـ:
-        <div class="list">
-          <div class="item"><b>مبتدئ</b><div class="meta">عايز تبني أساس مهني واضح وتفهم “إزاي أشتغل كأخصائي” خطوة بخطوة.</div></div>
-          <div class="item"><b>متوسط</b><div class="meta">عايز تثبّت مهارات المقابلة، التشخيص المبدئي، وصياغة الحالة.</div></div>
-          <div class="item"><b>متقدم</b><div class="meta">عايز تطوير الفورميوليشن، التخطيط العلاجي، والتعامل مع حالات أعقد.</div></div>
+      <div class="list">
+        <div class="item"><b>مبتدئ</b><div class="meta">تبني أساس مهني واضح خطوة بخطوة.</div></div>
+        <div class="item"><b>متوسط</b><div class="meta">تثبيت المقابلة + التشخيص المبدئي + الصياغة.</div></div>
+        <div class="item"><b>متقدم</b><div class="meta">تخطيط علاجي + حالات أعقد + عرض حالة.</div></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="card compact">
+        <div class="kicker">مبادئ التدريب</div>
+        <div class="grid" style="margin-top:12px">
+          <div class="item"><b>Evidence-Based Practice</b><div class="meta">منهجية مبنية على الدليل قدر الإمكان.</div></div>
+          <div class="item"><b>Clinical Thinking</b><div class="meta">نفهم “الحلقة” قبل التدخل.</div></div>
+          <div class="item"><b>Practice & Templates</b><div class="meta">قوالب وتمارين تثبت المهارة.</div></div>
+          <div class="item"><b>Professional Identity</b><div class="meta">حدود وأخلاقيات وتواصل علاجي.</div></div>
         </div>
       </div>
-    </div>
 
-    <div class="box">
-      <div class="kicker">هتستفيد إيه؟</div>
-      <div class="meta">
-        الهدف ليس “معلومات” فقط، بل <b>مهارة قابلة للتطبيق</b>.
-        <div class="hr"></div>
+      <div class="card compact">
+        <div class="kicker">خريطة التقدم</div>
         <div class="list">
-          <div class="item"><b>Frameworks واضحة</b><div class="meta">نماذج عملية لتفكير الحالة: (5P/CBT وغيرها).</div></div>
-          <div class="item"><b>أدوات جاهزة</b><div class="meta">Checklists + Templates + نماذج توثيق (SOAP وغيره).</div></div>
-          <div class="item"><b>لغة مهنية</b><div class="meta">إزاي تكتب ملاحظاتك وتعرض حالة بشكل احترافي.</div></div>
+          <div class="item"><b>مرحلة 1 — الأساسيات</b><div class="meta">Interview + MSE + Documentation.</div></div>
+          <div class="item"><b>مرحلة 2 — صياغة الحالة</b><div class="meta">5P/CBT + أهداف قابلة للقياس.</div></div>
+          <div class="item"><b>مرحلة 3 — تطبيق متقدم</b><div class="meta">حالات أعقد + قرار علاجي.</div></div>
         </div>
       </div>
-    </div>
 
+      <div class="card compact">
+        <div class="kicker">عن المدرب</div>
+        <div class="small" style="margin-top:10px">
+          اكتب هنا نبذة مختصرة عنك (مؤهلات/خبرة/توجه علاجي) — ولو تبعتها لي أعيد صياغتها عربي/إنجليزي.
+        </div>
+      </div>
+    </main>
   </div>
 
-  <!-- PRINCIPLES -->
-  <div class="card pad" style="margin-top:12px">
-    <div class="kicker">مبادئ التدريب داخل Psycho Club Academy</div>
-    <div class="p" style="margin-top:10px">
-      إحنا بنشتغل على 4 أعمدة:
-    </div>
-
-    <div class="grid2">
-      <div class="item">
-        <b>1) Evidence-Based Practice</b>
-        <div class="meta">نستند إلى مبادئ وتطبيقات مبنية على الدليل قدر الإمكان.</div>
-      </div>
-      <div class="item">
-        <b>2) Clinical Thinking</b>
-        <div class="meta">فهم الحالة = أهم من حفظ المصطلحات. بنعلّمك “تفكر” قبل ما “تطبّق”.</div>
-      </div>
-      <div class="item">
-        <b>3) Practice & Templates</b>
-        <div class="meta">تطبيق + نماذج جاهزة + تمارين قصيرة تساعدك على تثبيت المهارة.</div>
-      </div>
-      <div class="item">
-        <b>4) Professional Identity</b>
-        <div class="meta">حدود مهنية، أخلاقيات، وتواصل علاجي صحي يحميك ويحمي العميل.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ROADMAP -->
-  <div class="card pad" style="margin-top:12px">
-    <div class="kicker">خريطة التقدم داخل المنصة</div>
-    <div class="meta" style="margin-top:10px">
-      علشان ما تتوهش، بنرتب التجربة بمسار واضح:
-    </div>
-
-    <div class="list">
-      <div class="item">
-        <b>مرحلة 1 — الأساسيات</b>
-        <div class="meta">مقابلة + MSE + مبادئ تشخيص + توثيق مهني.</div>
-      </div>
-      <div class="item">
-        <b>مرحلة 2 — صياغة الحالة</b>
-        <div class="meta">Case formulation وربطها بالخطة العلاجية وخطوات قابلة للقياس.</div>
-      </div>
-      <div class="item">
-        <b>مرحلة 3 — التطبيق المتقدم</b>
-        <div class="meta">حالات أكثر تعقيدًا، اتخاذ قرار علاجي، وتنظيم العمل السريري.</div>
-      </div>
-    </div>
-
-    <div class="row">
-      <a class="btn primary" href="courses.html">ابدأ من الكورسات</a>
-      <a class="btn ghost" href="library.html">شوف المكتبة المجانية</a>
-    </div>
-  </div>
-
-  <!-- TRAINER -->
-  <div class="card pad" style="margin-top:12px">
-    <div class="kicker">عن المدرب</div>
-    <div class="p" style="margin-top:10px">
-      اكتب هنا نبذة مختصرة عنك (مؤهلاتك/خبراتك/توجهك العلاجي) في 4-6 سطور.
-    </div>
-    <div class="meta">
-      *لو تحب تبعتلي النبذة بأي شكل، أعيد صياغتها بشكل احترافي عربي/إنجليزي وأحطها في الصفحة.*
-    </div>
-  </div>
-
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-grid">
       <div>
         <div class="kicker">Psycho Club Academy</div>
-        <div class="small">منصة تدريبية نفسية احترافية — تطوير مهني مبني على التطبيق.</div>
+        <div class="small">منصة تدريبية احترافية مبنية على التطبيق.</div>
       </div>
     </div>
   </div>
