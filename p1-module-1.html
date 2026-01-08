@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Program 1 • Module 1 | Psycho Club Academy</title>
+  <meta name="description" content="Module 1 من برنامج إعداد الأخصائي النفسي." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+    .note{color:var(--muted);font-size:13px;line-height:1.7}
+    .list{display:grid;gap:10px;margin-top:12px}
+    .item{padding:12px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+    .item b{font-family:Inter, Cairo, system-ui}
+    .tag{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+    <div class="links">
+      <a class="link" data-nav href="index.html">الرئيسية</a>
+      <a class="link" data-nav href="courses.html">الكورسات</a>
+      <a class="link" data-nav href="dashboard.html">Dashboard</a>
+      <a class="link" data-nav href="contact.html">الدعم</a>
+    </div>
+    <a class="btn primary" href="dashboard.html">رجوع للداش بورد</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="card pad">
+    <span class="badge">Program 1 • Module 1</span>
+    <div class="h1" style="margin-top:12px">Module 1: Clinical Foundations</div>
+    <div class="p">أساسيات العمل الإكلينيكي: الدور المهني، الحدود، وبناء العلاقة العلاجية.</div>
+
+    <div class="row">
+      <span class="tag">Beginner</span>
+      <span class="tag">Core</span>
+      <span class="tag">Templates</span>
+    </div>
+
+    <div class="row">
+      <a class="btn primary" href="#lessons">ابدأ المحتوى</a>
+      <a class="btn ghost" href="p1-module-2.html">Module 2</a>
+      <a class="btn ghost" href="p1-module-3.html">Module 3</a>
+    </div>
+
+    <div class="note" style="margin-top:10px">
+      *دي صفحة جاهزة للملء. هنضيف الفيديو/الملفات/الدروس هنا تدريجيًا.*
+    </div>
+  </div>
+
+  <div class="card pad" id="lessons" style="margin-top:12px">
+    <div class="kicker">Lessons (قريبًا)</div>
+
+    <div class="list">
+      <div class="item">
+        <b>Lesson 1: Role & Boundaries</b>
+        <div class="note">محتوى + مثال إكلينيكي + نقاط أخلاقية.</div>
+      </div>
+      <div class="item">
+        <b>Lesson 2: Therapeutic Alliance</b>
+        <div class="note">أساسيات التحالف العلاجي وكيفية بنائه.</div>
+      </div>
+      <div class="item">
+        <b>Lesson 3: Confidentiality & Consent</b>
+        <div class="note">السرية والموافقة المستنيرة وحدودها.</div>
+      </div>
+      <div class="item">
+        <b>Downloads</b>
+        <div class="note">Templates (قريبًا): Intake • Consent • Boundaries checklist</div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:14px">
+      <a class="btn ghost" href="dashboard.html">رجوع للداش بورد</a>
+      <a class="btn primary" href="p1-module-2.html">التالي: Module 2</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="kicker">Psycho Club Academy</div>
+        <div class="small">Program 1 • Module 1</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
