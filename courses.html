@@ -4,96 +4,125 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>الكورسات | Psycho Club Academy</title>
-  <meta name="description" content="كورسات وبرامج تدريبية احترافية في علم النفس والتطبيق الإكلينيكي." />
+  <meta name="description" content="كورسات Psycho Club Academy في التدريب النفسي والإكلينيكي." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
+    .card2{padding:14px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+    .card2 b{font-family:Inter, Cairo, system-ui}
+    .meta{color:var(--muted);font-size:13px;line-height:1.7;margin-top:6px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .tag{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px}
+  </style>
 </head>
 <body>
 
+<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html">
       <div class="logo"></div>
       <span>Psycho Club Academy</span>
     </a>
-
     <div class="links">
       <a class="link" data-nav href="index.html">الرئيسية</a>
-      <a class="link" data-nav href="courses.html">الكورسات</a>
-      <a class="link" data-nav href="articles.html">المقالات</a>
-      <a class="link" data-nav href="library.html">المكتبة</a>
-      <a class="link" data-nav href="forum.html">المنتدى</a>
-      <a class="link" data-nav href="dashboard.html">Dashboard</a>
+      <a class="link" data-nav href="articles.html">مقالات</a>
       <a class="link" data-nav href="contact.html">تواصل</a>
     </div>
-
     <a class="btn primary" href="contact.html">اشترك الآن</a>
   </div>
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
   <div class="card pad">
-    <div class="h1">الكورسات والبرامج التدريبية</div>
+    <span class="badge">Training Programs</span>
+    <div class="h1" style="margin-top:12px">الكورسات</div>
     <div class="p">
-      مجموعة من البرامج التعليمية المصممة لتطوير المهارات المهنية والمعرفة التطبيقية في مجال علم النفس.
+      هذه الصفحة مخصصة لعرض البرامج التدريبية المتاحة داخل Psycho Club Academy.
     </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
-      <a class="btn ghost" href="dashboard.html">دخول المشتركين</a>
+
+    <div class="row">
+      <span class="tag">Beginner</span>
+      <span class="tag">Intermediate</span>
+      <span class="tag">Advanced</span>
     </div>
   </div>
 
-  <div class="grid4" style="margin-top:14px">
+  <!-- COURSES GRID -->
+  <div class="grid">
 
-    <a class="tile"
-       href="https://muztafasaleh5-rgb.github.io/psychoclubacademy/course-setup.html">
+    <!-- COURSE 1 -->
+    <div class="card2">
       <b>برنامج إعداد الأخصائي النفسي</b>
-      <div class="small">Beginner → Intermediate → Advanced</div>
-    </a>
+      <div class="meta">
+        برنامج تدريبي متكامل يجهّزك للممارسة المهنية الإكلينيكية خطوة بخطوة.
+      </div>
+      <div class="row">
+        <span class="tag">Beginner → Advanced</span>
+        <span class="tag">Clinical</span>
+      </div>
+      <div class="row">
+        <a class="btn primary" href="course-setup.html">الدخول للبرنامج</a>
+      </div>
+    </div>
 
-    <div class="tile">
+    <!-- COURSE 2 -->
+    <div class="card2">
       <b>CBT Foundations & Clinical Tools</b>
-      <div class="small">قريبًا</div>
+      <div class="meta">
+        أساسيات العلاج المعرفي السلوكي وتطبيقاته الإكلينيكية العملية.
+      </div>
+      <div class="row">
+        <span class="tag">CBT</span>
+        <span class="tag">Practice</span>
+      </div>
+      <div class="row">
+        <a class="btn ghost" href="#">قريبًا</a>
+      </div>
     </div>
 
-    <div class="tile">
+    <!-- COURSE 3 -->
+    <div class="card2">
       <b>Clinical Case Formulation</b>
-      <div class="small">قريبًا</div>
-    </div>
-
-    <div class="tile">
-      <b>Assessment & Diagnosis</b>
-      <div class="small">قريبًا</div>
+      <div class="meta">
+        تدريب عملي على بناء الفورميوليشن وربط التشخيص بالتدخل العلاجي.
+      </div>
+      <div class="row">
+        <span class="tag">Advanced</span>
+      </div>
+      <div class="row">
+        <a class="btn ghost" href="#">قريبًا</a>
+      </div>
     </div>
 
   </div>
 
-  <div class="card pad" style="margin-top:16px">
-    <div class="kicker">طريقة الاشتراك</div>
-    <div class="p" style="margin-top:10px">
-      الاشتراك متاح حاليًا عبر:
-      <br>• Vodafone Cash
-      <br>• InstaPay
-      <br><br>
-      بعد التحويل يتم تفعيل الاشتراك يدويًا.
-    </div>
-
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn primary" href="contact.html">طلب اشتراك</a>
-      <a class="btn ghost" href="dashboard.html">دخول المشتركين</a>
+  <div class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="kicker">Psycho Club Academy</div>
+        <div class="small">
+          هذه الصفحة مخصصة للمشتركين فقط. في حالة عدم امتلاك كلمة السر تواصل مع الدعم.
+        </div>
+      </div>
     </div>
   </div>
 
-</div>
-
-<div class="container footer">
-  <div class="footer-grid">
-    <div>
-      <div class="kicker">Psycho Club Academy</div>
-      <div class="small">منصة تعليمية نفسية احترافية للتدريب والتطوير المهني.</div>
-    </div>
-  </div>
 </div>
 
 <script src="app.js"></script>
+
+<!-- 🔒 PASSWORD GATE FOR COURSES PAGE ONLY -->
+<script src="gate.js"></script>
+<script>
+  pcaProtectPage({
+    gateKey: "courses",
+    password: "COURSES-2026",
+    title: "صفحة الكورسات — دخول مخصص"
+  });
+</script>
+
 </body>
 </html>
