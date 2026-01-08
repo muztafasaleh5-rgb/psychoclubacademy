@@ -3,42 +3,115 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Psycho Club Academy | Psycho Club Academy</title>
-  <meta name="description" content="منصة تعليمية نفسية احترافية لإعداد الأخصائي النفسي: كورسات تطبيقية، مقالات علمية، كتب ومقاييس نفسية مبنية على الدليل." />
-  <style>
-    body{margin:0;font-family:Arial,system-ui;background:#0f172a;color:#f8fafc}
-    .wrap{max-width:980px;margin:0 auto;padding:64px 20px}
-    .badge{display:inline-block;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;opacity:.9}
-    h1{font-size:44px;margin:18px 0 10px}
-    p{font-size:18px;line-height:1.7;opacity:.9;margin:0 0 16px}
-    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-    a.btn{padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:700}
-    .primary{background:#22c55e;color:#05150a}
-    .ghost{border:1px solid rgba(255,255,255,.22);color:#f8fafc}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
-    .card{padding:14px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.03)}
-    .muted{opacity:.75;font-size:14px}
-    @media (max-width:800px){.grid{grid-template-columns:repeat(2,1fr)} h1{font-size:34px}}
-  </style>
+  <title>Psycho Club Academy | منصة إعداد الأخصائي النفسي</title>
+  <meta name="description" content="منصة تعليمية نفسية احترافية لإعداد الأخصائي النفسي: كورسات تطبيقية، مقالات علمية، كتب ومقاييس مجانية مبنية على الدليل." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">Psycho Club Academy</span>
-    <h1>منصة احترافية لإعداد الأخصائي النفسي</h1>
-    <p>كورسات تطبيقية • مقالات علمية • كتب ومقاييس مجانية • مسارات للمبتدئ والمتوسط والمتقدم</p>
-    <p class="muted" dir="ltr">Professional Training for Psychological Practitioners</p>
 
-    <div class="btns">
-      <a class="btn primary" href="#">ابدأ بالكورسات (قريبًا)</a>
-      <a class="btn ghost" href="#">المكتبة المجانية (قريبًا)</a>
-    </div>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Psycho Club Academy</span>
+      </a>
 
-    <div class="grid">
-      <div class="card"><b>Courses</b><div class="muted">Paid training programs</div></div>
-      <div class="card"><b>Books</b><div class="muted">Free guides & PDFs</div></div>
-      <div class="card"><b>Articles</b><div class="muted">Evidence-based blog</div></div>
-      <div class="card"><b>Scales</b><div class="muted">Assessment tools</div></div>
+      <div class="links">
+        <a class="link" data-nav href="index.html">الرئيسية</a>
+        <a class="link" data-nav href="courses.html">الكورسات</a>
+        <a class="link" data-nav href="articles.html">المقالات</a>
+        <a class="link" data-nav href="library.html">المكتبة</a>
+        <a class="link" data-nav href="forum.html">المنتدى</a>
+        <a class="link" data-nav href="contact.html">تواصل</a>
+      </div>
+
+      <a class="btn primary" href="courses.html">ابدأ الآن</a>
     </div>
   </div>
+
+  <!-- HERO -->
+  <div class="container hero">
+    <div class="hero-grid">
+      <div class="card pad">
+        <span class="badge">Psycho Club Academy • Evidence-Based</span>
+        <div class="h1">منصة احترافية لإعداد الأخصائي النفسي</div>
+        <div class="p">
+          كورسات تطبيقية • مقالات علمية • كتب ومقاييس مجانية • مسارات للمبتدئ والمتوسط والمتقدم
+        </div>
+        <div class="p" dir="ltr" style="font-family:Inter, Cairo, system-ui">
+          Professional Training for Psychological Practitioners
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+          <a class="btn primary" href="courses.html">ابدأ بالكورسات</a>
+          <a class="btn ghost" href="library.html">المكتبة المجانية</a>
+          <a class="btn ghost" href="articles.html">اقرأ المقالات</a>
+        </div>
+      </div>
+
+      <div class="card pad">
+        <div class="kicker">What you’ll find</div>
+        <div class="p" style="margin-top:10px">
+          مسارات تدريبية + أدوات إكلينيكية + نماذج جاهزة + محتوى مبني على الدليل.
+        </div>
+        <div class="grid4" style="grid-template-columns:1fr 1fr; margin-top:12px">
+          <div class="tile">
+            <b>Courses</b>
+            <div class="small">Paid training programs</div>
+          </div>
+          <div class="tile">
+            <b>Articles</b>
+            <div class="small">Evidence-based blog</div>
+          </div>
+          <div class="tile">
+            <b>Books</b>
+            <div class="small">Free guides & PDFs</div>
+          </div>
+          <div class="tile">
+            <b>Scales</b>
+            <div class="small">Assessment tools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: Quick cards -->
+    <div class="card pad" style="margin-top:12px">
+      <div class="kicker">ابدأ من هنا</div>
+      <div class="p" style="margin-top:8px">اختار القسم اللي محتاجه دلوقتي.</div>
+      <div class="grid4">
+        <a class="tile" href="courses.html"><b>الكورسات</b><div class="small">برامج تدريب مدفوعة</div></a>
+        <a class="tile" href="library.html"><b>المكتبة</b><div class="small">كتب + مقاييس مجانية</div></a>
+        <a class="tile" href="articles.html"><b>المقالات</b><div class="small">مقالات علمية للـSEO</div></a>
+        <a class="tile" href="forum.html"><b>المنتدى</b><div class="small">نقاشات وأسئلة وإجابات</div></a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="kicker">Psycho Club Academy</div>
+          <div class="small" style="margin-top:8px">منصة تدريبية احترافية لإعداد الأخصائي النفسي.</div>
+        </div>
+        <div>
+          <div class="kicker">روابط</div>
+          <div class="small" style="margin-top:8px">
+            <a href="courses.html">الكورسات</a> •
+            <a href="articles.html">المقالات</a> •
+            <a href="library.html">المكتبة</a>
+          </div>
+        </div>
+        <div>
+          <div class="kicker">تواصل</div>
+          <div class="small" style="margin-top:8px">Instagram • WhatsApp • Email</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
