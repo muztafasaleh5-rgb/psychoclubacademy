@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard | Psycho Club Academy</title>
+  <meta name="description" content="بوابة المتدرب في Psycho Club Academy: روابط المحتوى، التعليمات، والجروبات." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:13px}
+    .two{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-top:12px}
+    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    .list{display:grid;gap:10px;margin-top:12px}
+    .item{padding:12px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+    .item b{font-family:Inter, Cairo, system-ui}
+    .meta{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
+    .warn{border:1px solid rgba(234,179,8,.35);background: rgba(234,179,8,.08)}
+    .ok{border:1px solid rgba(34,197,94,.35);background: rgba(34,197,94,.08)}
+    .mono{font-family:Inter, system-ui}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+    <div class="links">
+      <a class="link" data-nav href="index.html">الرئيسية</a>
+      <a class="link" data-nav href="courses.html">الكورسات</a>
+      <a class="link" data-nav href="articles.html">المقالات</a>
+      <a class="link" data-nav href="library.html">المكتبة</a>
+      <a class="link" data-nav href="forum.html">المنتدى</a>
+      <a class="link" data-nav href="contact.html">تواصل</a>
+    </div>
+    <a class="btn primary" href="contact.html">الدعم</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="card pad">
+    <span class="badge">Student Dashboard • بوابة المتدرب</span>
+    <div class="h1" style="margin-top:12px">Dashboard</div>
+    <div class="p">
+      أهلاً بك! دي صفحة الوصول للمحتوى بعد الاشتراك. هتلاقي هنا روابط الموديولات، الملفات، والجروبات.
+    </div>
+
+    <div class="row">
+      <span class="pill">⏱ تحديثات أسبوعية</span>
+      <span class="pill">📌 التزم بالترتيب</span>
+      <span class="pill">🧾 Templates & Files</span>
+    </div>
+  </div>
+
+  <div class="two">
+
+    <!-- LEFT: CONTENT -->
+    <div class="card pad">
+      <div class="kicker">ابدأ من هنا</div>
+      <div class="p" style="margin-top:10px">
+        اختر الكورس اللي أنت مشترك فيه، ثم ابدأ بالموديول رقم 1.
+      </div>
+
+      <div class="list">
+        <div class="item ok">
+          <b>برنامج إعداد الأخصائي النفسي</b>
+          <div class="meta">
+            <span class="mono">Beginner → Intermediate → Advanced</span><br>
+            • ابدأ بالموديول 1 ثم أكمل بالتسلسل.
+          </div>
+          <div class="row">
+            <a class="btn primary" href="p1-module-1.html">Module 1</a>
+            <a class="btn ghost" href="p1-module-2.html">Module 2</a>
+            <a class="btn ghost" href="p1-module-3.html">Module 3</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <b>CBT Foundations & Clinical Tools</b>
+          <div class="meta">Coming soon — سيتم تفعيله قريبًا داخل الـDashboard.</div>
+          <div class="row">
+            <a class="btn ghost" href="courses.html">عرض الكورسات</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: RULES + GROUPS -->
+    <div class="card pad">
+      <div class="kicker">الجروبات والدعم</div>
+      <div class="meta" style="margin-top:10px">
+        ضع روابط الجروبات هنا بعد تجهيزها. ويمكنك أيضًا وضع رقم الدعم/المساعدين.
+      </div>
+
+      <div class="list">
+        <div class="item">
+          <b>WhatsApp Group (Program 1)</b>
+          <div class="meta">ضع الرابط هنا: <span class="mono">https://chat.whatsapp.com/...</span></div>
+          <div class="row">
+            <a class="btn ghost" href="#">فتح الجروب</a>
+          </div>
+        </div>
+
+        <div class="item warn">
+          <b>قواعد مهمة</b>
+          <div class="meta">
+            • الروابط والملفات للاستخدام الشخصي فقط.<br>
+            • ممنوع مشاركة المحتوى خارج المنصة.<br>
+            • أي مشكلة في الوصول: تواصل عبر صفحة <a href="contact.html" style="text-decoration:underline">تواصل</a>.
+          </div>
+        </div>
+
+        <div class="item">
+          <b>الدعم على واتساب</b>
+          <div class="meta">رقم الدعم: <span class="mono">+20 122 886 7384</span></div>
+          <div class="row">
+            <a class="btn primary"
+               target="_blank" rel="noopener"
+               href="https://wa.me/201228867384?text=%D8%A3%D9%87%D9%84%D8%A7%20%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20Psycho%20Club%20Academy%20%D9%88%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84%20%D9%84%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%89.%0A%0A%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%B3%3A%20%0A%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9%3A%20">
+              تواصل مع الدعم
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="kicker">Psycho Club Academy</div>
+        <div class="small">هذه الصفحة مخصصة للمشتركين. احفظ الرابط لديك بعد الاشتراك.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
