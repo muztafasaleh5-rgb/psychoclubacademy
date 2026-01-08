@@ -1,27 +1,27 @@
 /* =========================
-   Psycho Club Academy — Theme 2: Warm Premium
-   Lux, warm, high-conversion look
+   Psycho Club Academy — Theme 3: Cyber Gradient
+   Flashy, modern, gradient-glow look
    ========================= */
 
 :root{
-  --bg0:#09060A;
-  --bg1:#130A12;
+  --bg0:#060814;
+  --bg1:#0A0F2A;
 
-  --text:#FFF7EE;
-  --muted: rgba(255,247,238,.74);
-  --muted2: rgba(255,247,238,.54);
+  --text:#F2F6FF;
+  --muted: rgba(242,246,255,.72);
+  --muted2: rgba(242,246,255,.54);
 
   --card: rgba(255,255,255,.06);
-  --card2: rgba(255,255,255,.09);
+  --card2: rgba(255,255,255,.10);
   --border: rgba(255,255,255,.14);
 
-  --primary:#F7C46C;            /* gold */
-  --primary2: rgba(247,196,108,.18);
-  --secondary:#FF5C7A;          /* rose */
-  --secondary2: rgba(255,92,122,.14);
+  --primary:#A855F7;          /* purple */
+  --primary2: rgba(168,85,247,.18);
+  --secondary:#22D3EE;        /* cyan */
+  --secondary2: rgba(34,211,238,.14);
 
-  --shadow: 0 18px 64px rgba(0,0,0,.6);
-  --radius: 22px;
+  --shadow: 0 20px 70px rgba(0,0,0,.6);
+  --radius: 20px;
 }
 
 *{box-sizing:border-box}
@@ -30,9 +30,9 @@ body{
   margin:0;
   color:var(--text);
   background:
-    radial-gradient(1100px 620px at 12% -10%, var(--primary2), transparent 62%),
-    radial-gradient(980px 560px at 92% 12%, var(--secondary2), transparent 58%),
-    radial-gradient(700px 420px at 40% 120%, rgba(255,255,255,.06), transparent 70%),
+    radial-gradient(1200px 640px at 12% -10%, var(--primary2), transparent 62%),
+    radial-gradient(980px 560px at 92% 10%, var(--secondary2), transparent 58%),
+    radial-gradient(620px 420px at 40% 120%, rgba(255,255,255,.06), transparent 70%),
     linear-gradient(180deg, var(--bg0), var(--bg1));
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Cairo", Arial;
 }
@@ -62,7 +62,7 @@ body{
 .nav{
   position:sticky; top:0; z-index:50;
   backdrop-filter: blur(12px);
-  background: rgba(9,6,10,.55);
+  background: rgba(6,8,20,.55);
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0}
@@ -73,9 +73,9 @@ body{
 .logo{
   width:36px; height:36px; border-radius:14px;
   background:
-    radial-gradient(14px 14px at 30% 30%, rgba(255,255,255,.78), transparent 60%),
-    linear-gradient(135deg, var(--primary), rgba(255,92,122,.75));
-  box-shadow: 0 14px 28px rgba(0,0,0,.40);
+    radial-gradient(14px 14px at 30% 30%, rgba(255,255,255,.82), transparent 60%),
+    linear-gradient(135deg, var(--primary), rgba(34,211,238,.85));
+  box-shadow: 0 14px 34px rgba(0,0,0,.45);
 }
 .links{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
 .link{
@@ -83,7 +83,7 @@ body{
   font-weight:850; font-size:14px;
   padding:8px 10px; border-radius:12px;
 }
-.link:hover{background: rgba(255,255,255,.07); color:var(--text)}
+.link:hover{background: rgba(255,255,255,.08); color:var(--text)}
 
 /* Buttons */
 .btn{
@@ -97,13 +97,13 @@ body{
   cursor:pointer;
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
-.btn:hover{background: rgba(255,255,255,.09); transform: translateY(-1px)}
+.btn:hover{background: rgba(255,255,255,.10); transform: translateY(-1px)}
 .btn.primary{
-  border-color: rgba(247,196,108,.60);
-  background: linear-gradient(180deg, rgba(247,196,108,.26), rgba(247,196,108,.14));
-  box-shadow: 0 12px 34px rgba(0,0,0,.35), 0 0 0 4px var(--primary2);
+  border-color: rgba(168,85,247,.60);
+  background: linear-gradient(180deg, rgba(168,85,247,.26), rgba(34,211,238,.14));
+  box-shadow: 0 14px 40px rgba(0,0,0,.35), 0 0 0 4px var(--primary2);
 }
-.btn.primary:hover{background: rgba(247,196,108,.24)}
+.btn.primary:hover{background: rgba(168,85,247,.25)}
 .btn.ghost{background: transparent}
 
 /* Cards */
@@ -112,10 +112,10 @@ body{
   border:1px solid var(--border);
   background: var(--card);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 .pad{padding:16px}
-.card.compact{padding:14px; border-radius:20px; box-shadow: 0 12px 38px rgba(0,0,0,.42)}
+.card.compact{padding:14px; border-radius:20px; box-shadow: 0 14px 44px rgba(0,0,0,.45)}
 
 /* Items */
 .list{display:grid; gap:10px; margin-top:12px}
@@ -124,9 +124,10 @@ body{
   border:1px solid var(--border);
   background: rgba(255,255,255,.05);
 }
-.item:hover{background: rgba(255,255,255,.08)}
+.item:hover{background: rgba(255,255,255,.09)}
 .item b{font-weight:950}
 
+/* Tags */
 .tag{
   display:inline-flex; padding:6px 10px; border-radius:999px;
   border:1px solid rgba(255,255,255,.18);
@@ -141,15 +142,15 @@ body{
 /* Layout */
 .layout-2{display:grid; grid-template-columns: 310px 1fr; gap:14px; margin-top:12px}
 .sidebar{
-  padding:14px; border-radius:22px;
+  padding:14px; border-radius:20px;
   border:1px solid var(--border);
   background: rgba(255,255,255,.05);
-  box-shadow: 0 12px 34px rgba(0,0,0,.30);
+  box-shadow: 0 12px 40px rgba(0,0,0,.35);
 }
 .main{display:grid; gap:14px}
 .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
 .tile{
-  padding:14px; border-radius:22px;
+  padding:14px; border-radius:20px;
   border:1px solid var(--border);
   background: rgba(255,255,255,.05);
 }
@@ -164,14 +165,14 @@ body{
   color:var(--text);
   outline:none;
 }
-.input:focus{border-color: rgba(247,196,108,.65); box-shadow: 0 0 0 4px var(--primary2)}
+.input:focus{border-color: rgba(34,211,238,.65); box-shadow: 0 0 0 4px var(--secondary2)}
 
 /* Footer */
 .footer{margin-top:14px}
 .footer-grid{
   display:grid; grid-template-columns:1fr; gap:10px;
   padding:14px;
-  border-radius:22px;
+  border-radius:20px;
   border:1px solid rgba(255,255,255,.11);
   background: rgba(255,255,255,.05);
 }
