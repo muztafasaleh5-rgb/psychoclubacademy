@@ -30,7 +30,10 @@
       <a class="link" data-nav href="p1-module-1.html">Module 1</a>
       <a class="link" data-nav href="contact.html">الدعم</a>
     </div>
-    <a class="btn primary" href="p1-module-1.html">رجوع للموديول</a>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn ghost" href="p1-module-1.html">رجوع</a>
+      <button class="btn ghost" onclick="pcaLock('p1'); location.reload();">قفل المحتوى</button>
+    </div>
   </div>
 </div>
 
@@ -148,5 +151,16 @@
 </div>
 
 <script src="app.js"></script>
+
+<!-- 🔒 PASSWORD GATE (Program 1) -->
+<script src="gate.js"></script>
+<script>
+  pcaProtectPage({
+    gateKey: "p1",
+    password: "PCA-CLUB-2026",
+    title: "محتوى المشتركين — Program 1"
+  });
+</script>
+
 </body>
 </html>
