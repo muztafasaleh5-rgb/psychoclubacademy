@@ -22,25 +22,23 @@
 </head>
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
     <div class="links">
       <a class="link" data-nav href="index.html">الرئيسية</a>
       <a class="link" data-nav href="courses.html">الكورسات</a>
-      <a class="link" data-nav href="articles.html">المقالات</a>
-      <a class="link" data-nav href="library.html">المكتبة</a>
-      <a class="link" data-nav href="forum.html">المنتدى</a>
-      <a class="link" data-nav href="contact.html">تواصل</a>
+      <a class="link" data-nav href="contact.html">الدعم</a>
     </div>
-    <a class="btn primary" href="contact.html">الدعم</a>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn ghost" href="courses.html">الكورسات</a>
+      <button class="btn ghost" onclick="pcaLock('p1'); location.reload();">قفل المحتوى</button>
+    </div>
   </div>
 </div>
 
 <div class="container">
 
-  <!-- HEADER -->
   <div class="card pad">
     <span class="badge">Student Dashboard • بوابة المتدرب</span>
     <div class="h1" style="margin-top:12px">Dashboard</div>
@@ -57,7 +55,6 @@
 
   <div class="two">
 
-    <!-- LEFT: CONTENT -->
     <div class="card pad">
       <div class="kicker">ابدأ من هنا</div>
       <div class="p" style="margin-top:10px">
@@ -88,7 +85,6 @@
       </div>
     </div>
 
-    <!-- RIGHT: RULES + GROUPS -->
     <div class="card pad">
       <div class="kicker">الجروبات والدعم</div>
       <div class="meta" style="margin-top:10px">
@@ -119,7 +115,7 @@
           <div class="row">
             <a class="btn primary"
                target="_blank" rel="noopener"
-               href="https://wa.me/201228867384?text=%D8%A3%D9%87%D9%84%D8%A7%20%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20Psycho%20Club%20Academy%20%D9%88%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84%20%D9%84%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%89.%0A%0A%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%B3%3A%20%0A%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9%3A%20">
+               href="https://wa.me/201228867384?text=%D8%A3%D9%87%D9%84%D8%A7%20%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20Psycho%20Club%20Academy%20%D9%88%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84%20%D9%84%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%89.%0A%0A%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%B3%3A%20Program%201%0A%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9%3A%20">
               تواصل مع الدعم
             </a>
           </div>
@@ -130,7 +126,6 @@
 
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-grid">
       <div>
@@ -143,5 +138,16 @@
 </div>
 
 <script src="app.js"></script>
+
+<!-- 🔒 PASSWORD GATE (Program 1) -->
+<script src="gate.js"></script>
+<script>
+  pcaProtectPage({
+    gateKey: "p1",
+    password: "PCA-CLUB-2026",
+    title: "بوابة المشتركين — Program 1"
+  });
+</script>
+
 </body>
 </html>
