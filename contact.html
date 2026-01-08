@@ -3,11 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>تواصل | Psycho Club Academy</title>
-  <meta name="description" content="تواصل مع Psycho Club Academy للاشتراك أو الاستفسار." />
+  <title>تواصل واشتراك | Psycho Club Academy</title>
+  <meta name="description" content="تواصل معنا للاشتراك والاستفسار عبر واتساب. سيتم الرد خلال 24 ساعة." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+    .chip{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:13px}
+    .steps{margin-top:12px;display:grid;gap:10px}
+    .step{padding:12px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+    .step b{font-family:Inter, Cairo, system-ui}
+    .help{color:var(--muted);font-size:13px;line-height:1.7;margin-top:8px}
+    .notice{border:1px solid rgba(34,197,94,.35);background: rgba(34,197,94,.08)}
+    .mono{font-family:Inter, system-ui}
+  </style>
 </head>
 <body>
+
+<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
@@ -19,31 +31,82 @@
       <a class="link" data-nav href="forum.html">المنتدى</a>
       <a class="link" data-nav href="contact.html">تواصل</a>
     </div>
-    <a class="btn primary" href="courses.html">ابدأ الآن</a>
+    <a class="btn primary" href="courses.html">الكورسات</a>
   </div>
 </div>
 
 <div class="container">
+
   <div class="card pad">
-    <div class="h1">تواصل</div>
-    <div class="p">اكتب بيانات التواصل هنا (واتساب/انستجرام/إيميل) وسنضيف نموذج تواصل لاحقًا.</div>
+    <span class="badge">WhatsApp Only • أبسط طريقة للاشتراك</span>
+    <div class="h1" style="margin-top:12px">التواصل والاشتراك</div>
+    <div class="p">
+      للاشتراك أو الاستفسار، تواصل معنا مباشرة على واتساب. سيتم الرد خلال 24 ساعة.
+    </div>
+
+    <div class="row">
+      <span class="chip">⏱ الرد خلال 24 ساعة</span>
+      <span class="chip">💳 Vodafone Cash / InstaPay</span>
+      <span class="chip">👥 جروبات واتساب للتنظيم</span>
+    </div>
   </div>
 
-  <div class="grid4" style="margin-top:14px">
-    <div class="tile"><b>WhatsApp</b><div class="small">ضع رقمك هنا</div></div>
-    <div class="tile"><b>Instagram</b><div class="small">@yourhandle</div></div>
-    <div class="tile"><b>Email</b><div class="small">you@email.com</div></div>
-    <div class="tile"><b>Payments</b><div class="small">Vodafone Cash / InstaPay</div></div>
+  <div class="card pad notice" style="margin-top:12px">
+    <div class="kicker">زر تواصل مباشر</div>
+    <div class="p" style="margin-top:10px">
+      اضغط الزر وابعث رسالة الاشتراك الجاهزة، وسيقوم فريقنا بتوجيهك للخطوات التالية.
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="row">
+      <a class="btn primary"
+         href="https://wa.me/201228867384?text=%D8%A3%D9%87%D9%84%D8%A7%20%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20Psycho%20Club%20Academy.%0A%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%20%0A%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%B3%3A%20%0A%D8%B7%D8%B1%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9%3A%20Vodafone%20Cash%20%2F%20InstaPay%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A9%20(%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%D9%8A)%3A%20"
+         target="_blank" rel="noopener">
+        تواصل على واتساب الآن
+      </a>
+      <span class="help">رقم واتساب: <span class="mono">+20 122 886 7384</span></span>
+    </div>
+
+    <div class="help">
+      لو الزر ما فتحش، انسخ الرقم وتواصل يدويًا.
+    </div>
+  </div>
+
+  <div class="card pad" style="margin-top:12px">
+    <div class="kicker">خطوات الاشتراك (مختصرة)</div>
+
+    <div class="steps">
+      <div class="step"><b>1)</b> ابعت رسالة اشتراك على واتساب (بالزر فوق).</div>
+      <div class="step"><b>2)</b> هيتم توجيهك لطريقة الدفع المناسبة (Vodafone Cash أو InstaPay).</div>
+      <div class="step"><b>3)</b> بعد تأكيد الدفع، هتستلم رابط/تعليمات الوصول للمحتوى.</div>
+      <div class="step"><b>4)</b> يتم إضافتك لجروب واتساب الخاص بالكورس لتنظيم المتابعة.</div>
+    </div>
+
+    <div class="help">
+      *يمكنك كتابة اسم الكورس الذي تريد الاشتراك فيه داخل الرسالة.*
+    </div>
+  </div>
+
+  <div class="card pad" style="margin-top:12px">
+    <div class="kicker">استفسار قبل الاشتراك؟</div>
+    <div class="p" style="margin-top:10px">
+      لو عندك سؤال سريع عن المحتوى أو المستوى المناسب، ابعت لنا سؤالك على واتساب وسنرد عليك.
+    </div>
+    <div class="row">
+      <a class="btn ghost" href="courses.html">تصفح الكورسات</a>
+      <a class="btn ghost" href="index.html">العودة للرئيسية</a>
+    </div>
   </div>
 
   <div class="footer">
     <div class="footer-grid">
       <div>
         <div class="kicker">Psycho Club Academy</div>
-        <div class="small">نرد على الاستفسارات وطلبات الاشتراك.</div>
+        <div class="small">الدعم عبر واتساب متاح يوميًا — نرد خلال 24 ساعة.</div>
       </div>
     </div>
   </div>
+
 </div>
 
 <script src="app.js"></script>
