@@ -4,36 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>المقالات | Psycho Club Academy</title>
-  <meta name="description" content="مقالات مبنية على التفكير الإكلينيكي والتطبيق العملي: صياغة الحالة، التشخيص المبدئي، أدوات CBT، وأخلاقيات الممارسة." />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="مقالات مبنية على التفكير الإكلينيكي والتطبيق العملي." />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:12px}
-    .post{display:block;padding:14px;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
-    .post:hover{background:rgba(255,255,255,.06)}
-    .post b{font-family:Inter, Cairo, system-ui}
-    .meta{color:var(--muted);font-size:13px;line-height:1.8;margin-top:8px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .tag{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px}
-    .search{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .input{flex:1;min-width:220px;padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--text);outline:none}
-    .btnSm{padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer}
-    .btnSm.active{border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.12)}
-    .smallNote{color:var(--muted);font-size:13px;line-height:1.7;margin-top:10px}
-  </style>
 </head>
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <div class="logo"></div>
-      <span>Psycho Club Academy</span>
-    </a>
+    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
     <div class="links">
-      <a class="link" data-nav href="index.html">الرئيسية</a>
       <a class="link" data-nav href="about.html">عن المنصة</a>
       <a class="link" data-nav href="articles.html">المقالات</a>
       <a class="link" data-nav href="library.html">المكتبة</a>
@@ -45,98 +24,82 @@
 
 <div class="container">
 
-  <!-- HERO -->
-  <div class="card pad">
-    <span class="badge">Articles • SEO Content</span>
-    <div class="h1" style="margin-top:12px">المقالات</div>
-    <div class="p">
-      مقالات مبنية على التطبيق الإكلينيكي: صياغة الحالة، مهارات المقابلة، أدوات CBT، التشخيص المبدئي، وأخلاقيات الممارسة.
-    </div>
+  <div class="layout-2">
 
-    <div class="search">
-      <input id="q" class="input" placeholder="ابحث داخل المقالات (مثال: فورميوليشن، CBT، تشخيص…)" />
-      <button class="btnSm" data-filter="all">الكل</button>
-      <button class="btnSm" data-filter="case">صياغة الحالة</button>
-      <button class="btnSm" data-filter="cbt">CBT</button>
-      <button class="btnSm" data-filter="ethics">أخلاقيات</button>
-      <button class="btnSm" data-filter="assessment">Assessment</button>
-    </div>
-
-    <div class="smallNote">
-      *كل مقال صفحة مستقلة (أفضل للـSEO). هنضيف مقالات جديدة تدريجيًا.*
-    </div>
-  </div>
-
-  <!-- POSTS -->
-  <div class="grid" id="posts">
-
-    <!-- Post 1 -->
-    <a class="post" href="articles/what-is-case-formulation.html"
-       data-tags="case assessment">
-      <b>ما هي صياغة الحالة Case Formulation؟ ولماذا هي أهم من التشخيص وحده؟</b>
-      <div class="meta">دليل عملي مبسط: الفرق بين الحدث/التفسير، نموذج 5P، وأخطاء شائعة.</div>
-      <div class="tags">
-        <span class="tag">صياغة الحالة</span>
-        <span class="tag">Assessment</span>
-        <span class="tag">Beginner</span>
+    <aside class="sidebar">
+      <div class="kicker">بحث وتصنيف</div>
+      <input id="q" class="input" placeholder="ابحث: فورميوليشن، CBT، تشخيص…" style="margin-top:12px"/>
+      <div class="list">
+        <button class="btn" style="width:100%" data-filter="all">الكل</button>
+        <button class="btn" style="width:100%" data-filter="case">صياغة الحالة</button>
+        <button class="btn" style="width:100%" data-filter="cbt">CBT</button>
+        <button class="btn" style="width:100%" data-filter="ethics">أخلاقيات</button>
+        <button class="btn" style="width:100%" data-filter="assessment">Assessment</button>
       </div>
-      <div class="meta">آخر تحديث: 2026-01-08</div>
-    </a>
-
-    <!-- Placeholder posts (جاهزين للتفعيل لاحقًا) -->
-    <a class="post" href="#"
-       data-tags="cbt"
-       aria-disabled="true" onclick="return false;">
-      <b>أداة Pivot &amp; Elicit في جلسات CBT: تطبيق عملي</b>
-      <div class="meta">هنشرح الإطار العملي خطوة بخطوة مع أمثلة من الجلسات.</div>
-      <div class="tags">
-        <span class="tag">CBT</span><span class="tag">Intermediate</span>
+      <div class="hr"></div>
+      <div class="small">
+        كل مقال صفحة مستقلة (أفضل للـSEO).
       </div>
-      <div class="meta">قريبًا</div>
-    </a>
+    </aside>
 
-    <a class="post" href="#"
-       data-tags="ethics"
-       aria-disabled="true" onclick="return false;">
-      <b>الحدود المهنية في العلاقة العلاجية: كيف تضع سياسة تواصل فعّالة؟</b>
-      <div class="meta">سياسة تواصل + إلغاء + طوارئ + نماذج رسائل جاهزة.</div>
-      <div class="tags">
-        <span class="tag">أخلاقيات</span><span class="tag">Practice</span>
+    <main class="main">
+      <div class="card compact">
+        <span class="badge">Articles • SEO</span>
+        <div class="h1" style="margin-top:12px">المقالات</div>
+        <div class="p">محتوى مفتوح لتقوية البراند وجذب زيارات من جوجل.</div>
       </div>
-      <div class="meta">قريبًا</div>
-    </a>
 
-    <a class="post" href="#"
-       data-tags="assessment"
-       aria-disabled="true" onclick="return false;">
-      <b>كيف تكتب SOAP Notes بشكل احترافي بدون حشو؟</b>
-      <div class="meta">قالب عملي + أمثلة صحيحة وأخطاء شائعة.</div>
-      <div class="tags">
-        <span class="tag">Assessment</span><span class="tag">Documentation</span>
+      <div class="grid" id="posts">
+
+        <a class="card compact" href="articles/what-is-case-formulation.html" data-tags="case assessment" style="text-decoration:none;color:inherit">
+          <b>ما هي صياغة الحالة Case Formulation؟ ولماذا هي أهم من التشخيص وحده؟</b>
+          <div class="meta">دليل عملي مبسط: نموذج 5P + خطوات التطبيق + أخطاء شائعة.</div>
+          <div class="row">
+            <span class="tag">صياغة الحالة</span>
+            <span class="tag">Assessment</span>
+            <span class="tag">Beginner</span>
+          </div>
+          <div class="meta">آخر تحديث: 2026-01-08</div>
+        </a>
+
+        <div class="card compact" data-tags="cbt" style="opacity:.75">
+          <b>أداة Pivot &amp; Elicit في CBT: تطبيق عملي</b>
+          <div class="meta">قريبًا — مثال جلسة خطوة بخطوة.</div>
+          <div class="row"><span class="tag">CBT</span><span class="tag">Intermediate</span></div>
+        </div>
+
+        <div class="card compact" data-tags="ethics" style="opacity:.75">
+          <b>الحدود المهنية: سياسة تواصل فعّالة</b>
+          <div class="meta">قريبًا — نماذج رسائل + قواعد.</div>
+          <div class="row"><span class="tag">أخلاقيات</span><span class="tag">Practice</span></div>
+        </div>
+
+        <div class="card compact" data-tags="assessment" style="opacity:.75">
+          <b>SOAP Notes: كتابة احترافية بدون حشو</b>
+          <div class="meta">قريبًا — قالب + أمثلة.</div>
+          <div class="row"><span class="tag">Assessment</span><span class="tag">Documentation</span></div>
+        </div>
+
       </div>
-      <div class="meta">قريبًا</div>
-    </a>
+
+      <div class="card compact">
+        <div class="kicker">اقتراح موضوع مقال</div>
+        <div class="p" style="margin-top:10px">ابعت عنوان + نقاط سريعة، وأنا أحوله لمقال SEO جاهز للنشر.</div>
+        <div class="row">
+          <a class="btn primary" href="contact.html">تواصل</a>
+          <a class="btn ghost" href="library.html">المكتبة</a>
+        </div>
+      </div>
+
+    </main>
 
   </div>
 
-  <!-- CTA -->
-  <div class="card pad" style="margin-top:12px">
-    <div class="kicker">تحب نكتب مقالاتك بسرعة وبنفس ستايل المنصة؟</div>
-    <div class="p" style="margin-top:10px">
-      ابعت عنوان المقال + أفكار سريعة (نقطتين أو ثلاثة)، وأنا أحوله لك لمقال SEO جاهز للنشر.
-    </div>
-    <div class="row">
-      <a class="btn primary" href="contact.html">تواصل</a>
-      <a class="btn ghost" href="library.html">المكتبة</a>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-grid">
       <div>
         <div class="kicker">Psycho Club Academy</div>
-        <div class="small">قسم المقالات مفتوح لزيادة الوعي وبناء مرجعية علمية.</div>
+        <div class="small">قسم المقالات مفتوح لزيادة الوعي وبناء مرجعية.</div>
       </div>
     </div>
   </div>
@@ -145,40 +108,34 @@
 
 <script src="app.js"></script>
 <script>
-  // Simple client-side search + tag filter (SEO-friendly because content is static)
   const q = document.getElementById('q');
   const postsWrap = document.getElementById('posts');
-  const posts = Array.from(postsWrap.querySelectorAll('.post'));
-  const buttons = Array.from(document.querySelectorAll('.btnSm[data-filter]'));
+  const posts = Array.from(postsWrap.querySelectorAll('[data-tags]'));
+  const btns = Array.from(document.querySelectorAll('button[data-filter]'));
+  let active = 'all';
 
-  let activeTag = 'all';
-
-  function applyFilter() {
-    const term = (q.value || '').trim().toLowerCase();
-    posts.forEach(p => {
-      const tags = (p.getAttribute('data-tags') || '').toLowerCase();
-      const text = (p.textContent || '').toLowerCase();
-      const okTag = (activeTag === 'all') ? true : tags.includes(activeTag);
-      const okTerm = term ? (text.includes(term) || tags.includes(term)) : true;
-      p.style.display = (okTag && okTerm) ? 'block' : 'none';
+  function apply(){
+    const term = (q.value||'').trim().toLowerCase();
+    posts.forEach(p=>{
+      const tags = (p.getAttribute('data-tags')||'').toLowerCase();
+      const text = (p.textContent||'').toLowerCase();
+      const okTag = active==='all' ? true : tags.includes(active);
+      const okTerm = term ? (tags.includes(term) || text.includes(term)) : true;
+      p.style.display = (okTag && okTerm) ? '' : 'none';
     });
   }
 
-  buttons.forEach(b => {
-    b.addEventListener('click', () => {
-      buttons.forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      activeTag = b.getAttribute('data-filter');
-      applyFilter();
+  btns.forEach(b=>{
+    b.addEventListener('click', ()=>{
+      btns.forEach(x=>x.classList.remove('primary'));
+      b.classList.add('primary');
+      active = b.getAttribute('data-filter');
+      apply();
     });
   });
 
-  q.addEventListener('input', applyFilter);
-
-  // default
-  const allBtn = buttons.find(b => b.getAttribute('data-filter') === 'all');
-  if (allBtn) allBtn.classList.add('active');
-  applyFilter();
+  q.addEventListener('input', apply);
+  apply();
 </script>
 </body>
 </html>
