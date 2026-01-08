@@ -31,6 +31,7 @@
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
       <a class="btn primary" href="contact.html">اشترك (Vodafone Cash / InstaPay)</a>
       <a class="btn ghost" href="dashboard.html">دخول المشتركين</a>
+      <button class="btn ghost" onclick="pcaLock('p1'); location.reload();">قفل المحتوى</button>
       <a class="btn ghost" href="courses.html">رجوع للكورسات</a>
     </div>
   </div>
@@ -79,5 +80,16 @@
 </div>
 
 <script src="app.js"></script>
+
+<!-- 🔒 PASSWORD GATE (Program 1) -->
+<script src="gate.js"></script>
+<script>
+  pcaProtectPage({
+    gateKey: "p1",
+    password: "PCA-CLUB-2026",
+    title: "محتوى المشتركين — برنامج إعداد الأخصائي النفسي"
+  });
+</script>
+
 </body>
 </html>
