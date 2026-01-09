@@ -1,15 +1,15 @@
 /* =========================
-   Psycho Club Academy — Base + Page-Specific Designs
-   Each page gets a unique look via body class:
-   .page-home .page-courses .page-books .page-articles .page-library .page-about .page-contact
+   Psycho Club Academy — Base + Theme System
    ========================= */
 
 :root{
   --bg0:#070A12;
   --bg1:#0B1220;
+
   --text:#F5F7FF;
   --muted:rgba(245,247,255,.72);
   --muted2:rgba(245,247,255,.52);
+
   --card: rgba(255,255,255,.06);
   --border: rgba(255,255,255,.14);
   --shadow: 0 18px 60px rgba(0,0,0,.55);
@@ -33,7 +33,7 @@ body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Cairo", Arial;
 }
 
-/* Global layout */
+/* Layout */
 .container{width:min(1120px, 92vw); margin:0 auto; padding:18px 0}
 .section{margin-top:14px}
 
@@ -55,7 +55,7 @@ body{
   font-size:12px; font-weight:900;
 }
 
-/* NAV (موحد وخفيف بدون زر ثابت) */
+/* NAV */
 .nav{
   position:sticky; top:0; z-index:50;
   backdrop-filter: blur(12px);
@@ -84,9 +84,9 @@ body{
   padding:8px 10px; border-radius:12px;
 }
 .link:hover{background: rgba(255,255,255,.06); color:var(--text)}
+@media (max-width:900px){.links{display:none}}
 
 /* Buttons */
-.row{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:12px}
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:8px;
   padding:10px 12px; border-radius:14px;
@@ -98,14 +98,14 @@ body{
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
 }
 .btn:hover{background: rgba(255,255,255,.09); transform: translateY(-1px)}
+.btn.ghost{background: transparent}
 .btn.primary{
   border-color: rgba(46,229,157,.55);
   background: linear-gradient(180deg, rgba(46,229,157,.22), rgba(46,229,157,.12));
   box-shadow: 0 10px 28px rgba(0,0,0,.25), 0 0 0 4px var(--primary2);
 }
-.btn.ghost{background: transparent}
 
-/* Cards & grids */
+/* Cards */
 .card{
   border-radius: var(--radius);
   border:1px solid var(--border);
@@ -115,158 +115,19 @@ body{
 }
 .pad{padding:16px}
 .hr{height:1px; background: rgba(255,255,255,.10); margin:14px 0}
-.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
-.grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
-@media (max-width:900px){.grid2{grid-template-columns:1fr} .links{display:none}}
-
-/* Page-specific “personalities” */
-.page-home{
-  --primary:#22D3EE; --primary2: rgba(34,211,238,.16);
-  --secondary:#A855F7; --secondary2: rgba(168,85,247,.14);
-}
-.page-courses{
-  --primary:#2EE59D; --primary2: rgba(46,229,157,.16);
-  --secondary:#4EA1FF; --secondary2: rgba(78,161,255,.14);
-}
-.page-books{
-  --primary:#F7C46C; --primary2: rgba(247,196,108,.18);
-  --secondary:#FF5C7A; --secondary2: rgba(255,92,122,.14);
-}
-.page-articles{
-  --primary:#60A5FA; --primary2: rgba(96,165,250,.16);
-  --secondary:#34D399; --secondary2: rgba(52,211,153,.14);
-}
-.page-library{
-  --primary:#A78BFA; --primary2: rgba(167,139,250,.18);
-  --secondary:#22D3EE; --secondary2: rgba(34,211,238,.14);
-}
-.page-about{
-  --primary:#34D399; --primary2: rgba(52,211,153,.16);
-  --secondary:#FBBF24; --secondary2: rgba(251,191,36,.14);
-}
-.page-contact{
-  --primary:#FB7185; --primary2: rgba(251,113,133,.18);
-  --secondary:#60A5FA; --secondary2: rgba(96,165,250,.14);
-}
-
-/* Unique components */
-.heroBanner{
-  position:relative;
-  overflow:hidden;
-}
-.heroBanner:before{
-  content:"";
-  position:absolute; inset:-60px -60px auto auto;
-  width:260px; height:260px;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.22), transparent 55%),
-              radial-gradient(circle at 60% 60%, var(--primary2), transparent 60%);
-  border-radius: 60px;
-  transform: rotate(12deg);
-  filter: blur(.2px);
-}
-.heroBanner:after{
-  content:"";
-  position:absolute; inset:auto auto -90px -90px;
-  width:320px; height:320px;
-  background: radial-gradient(circle at 30% 30%, var(--secondary2), transparent 60%);
-  border-radius: 80px;
-  transform: rotate(-10deg);
-}
-.heroBanner > *{position:relative; z-index:1}
-
-/* Home tiles */
-.tileLink{
-  text-decoration:none; color:inherit;
-  display:block; padding:16px;
-  border-radius:22px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-}
-.tileLink:hover{background: rgba(255,255,255,.09)}
-.iconDot{
-  width:42px;height:42px;border-radius:16px;
-  display:flex;align-items:center;justify-content:center;
-  border:1px solid rgba(255,255,255,.16);
-  background: rgba(255,255,255,.05);
-  font-size:18px;
-}
-
-/* Courses: filter chips */
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.chip{
-  padding:8px 10px;border-radius:999px;
-  border:1px solid rgba(255,255,255,.16);
-  background: rgba(255,255,255,.05);
-  color:var(--muted); font-weight:850; font-size:13px;
-}
-
-/* Books: bookshelf */
-.shelf{
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap:14px;
-}
-.book{
-  padding:16px; border-radius:22px;
-  border:1px solid rgba(255,255,255,.14);
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
-}
-.bookCover{
-  height:110px;border-radius:18px;
-  border:1px solid rgba(255,255,255,.14);
-  background:
-    radial-gradient(160px 80px at 20% 20%, rgba(255,255,255,.20), transparent 60%),
-    linear-gradient(135deg, var(--primary2), rgba(255,255,255,.04));
-}
-
-/* Articles: magazine */
-.feature{
-  padding:18px;border-radius:26px;
-  border:1px solid rgba(255,255,255,.14);
-  background:
-    radial-gradient(700px 260px at 20% 0%, var(--primary2), transparent 60%),
-    rgba(255,255,255,.05);
-}
-.postCard{
-  display:block;text-decoration:none;color:inherit;
-  padding:16px;border-radius:22px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-}
-.postCard:hover{background: rgba(255,255,255,.09)}
-.meta{color:var(--muted); font-size:13px; line-height:1.85; margin-top:8px}
-
-/* Library: downloads */
-.fileCard{
-  padding:16px;border-radius:22px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-}
-
-/* About: timeline */
-.timeline{display:grid;gap:12px;margin-top:12px}
-.step{
-  padding:14px;border-radius:20px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-}
-
-/* Contact: split */
-.contactGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:12px}
-@media (max-width:900px){.contactGrid{grid-template-columns:1fr}}
 
 /* Footer */
 .footer-grid{
-  display:grid; grid-template-columns:1fr; gap:10px;
+  display:grid; gap:10px;
   padding:14px;
   border-radius:22px;
   border:1px solid rgba(255,255,255,.11);
   background: rgba(255,255,255,.05);
 }
-/* =====================
-   Light / Dark Mode
-   ===================== */
 
-/* الوضع الفاتح */
+/* =====================
+   Light Mode
+   ===================== */
 body.light{
   --bg0:#f6f7fb;
   --bg1:#ffffff;
@@ -276,16 +137,24 @@ body.light{
   --muted2: rgba(17,24,39,.55);
 
   --card: rgba(0,0,0,.03);
-  --card2: rgba(0,0,0,.05);
   --border: rgba(0,0,0,.12);
 
   --primary:#2563eb;
-  --primary2: rgba(37,99,235,.15);
+  --primary2: rgba(37,99,235,.14);
+  --secondary:#16a34a;
+  --secondary2: rgba(22,163,74,.10);
 }
 
-/* خلفية الوضع الفاتح */
 body.light{
   background:
-    radial-gradient(900px 500px at 10% -10%, rgba(37,99,235,.08), transparent 60%),
+    radial-gradient(900px 500px at 10% -10%, rgba(37,99,235,.10), transparent 60%),
+    radial-gradient(900px 540px at 92% 12%, rgba(22,163,74,.10), transparent 55%),
     linear-gradient(180deg, var(--bg0), var(--bg1));
 }
+
+body.light .nav{
+  background: rgba(255,255,255,.78);
+  border-bottom:1px solid rgba(0,0,0,.10);
+}
+body.light .link{color: rgba(17,24,39,.75)}
+body.light .link:hover{background: rgba(0,0,0,.05); color:#111827}
