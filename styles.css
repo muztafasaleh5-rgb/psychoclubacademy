@@ -262,3 +262,30 @@ body{
   border:1px solid rgba(255,255,255,.11);
   background: rgba(255,255,255,.05);
 }
+/* =====================
+   Light / Dark Mode
+   ===================== */
+
+/* الوضع الفاتح */
+body.light{
+  --bg0:#f6f7fb;
+  --bg1:#ffffff;
+
+  --text:#111827;
+  --muted: rgba(17,24,39,.72);
+  --muted2: rgba(17,24,39,.55);
+
+  --card: rgba(0,0,0,.03);
+  --card2: rgba(0,0,0,.05);
+  --border: rgba(0,0,0,.12);
+
+  --primary:#2563eb;
+  --primary2: rgba(37,99,235,.15);
+}
+
+/* خلفية الوضع الفاتح */
+body.light{
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(37,99,235,.08), transparent 60%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
