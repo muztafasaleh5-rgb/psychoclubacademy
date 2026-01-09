@@ -4,90 +4,51 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>الكورسات | Psycho Club Academy</title>
-  <meta name="description" content="كورسات Psycho Club Academy: برامج تدريبية نفسية وإكلينيكية." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/psychoclubacademy/assets/css/styles.css" />
 </head>
-<body class="page-courses">
+<body>
 
-<div class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
-    <div class="links">
-      <a class="link" href="index.html">الرئيسية</a>
-      <a class="link" href="books.html">الكتب</a>
-      <a class="link" href="articles.html">المقالات العلمية</a>
-      <a class="link" href="library.html">المكتبة</a>
-      <a class="link" href="contact.html">تواصل معنا</a>
-    </div>
-  </div>
-</div>
+<div id="siteHeader"></div>
 
-<div class="container">
+<section class="wrap" style="padding:16px 0">
+  <div class="card pad">
+    <h1 class="h1">الكورسات</h1>
+    <p class="p">ابحث بالاسم أو التخصص. الاشتراك عبر واتساب لتبسيط العملية.</p>
 
-  <div class="feature">
-    <span class="badge">Courses • Protected</span>
-    <h1 class="h1" style="margin-top:12px">الكورسات</h1>
-    <p class="p">اختر البرنامج المناسب لك. هذه الصفحة مقفولة بكلمة سر للمشتركين.</p>
-
-    <!-- زر الكورسات موجود هنا فقط -->
-    <div class="row">
-      <a class="btn primary" href="contact.html">اشترك الآن</a>
-      <button class="btn ghost" onclick="pcaLock('courses'); location.reload();">قفل الصفحة</button>
-    </div>
-
-    <div class="chips">
-      <span class="chip">Beginner</span>
-      <span class="chip">Intermediate</span>
-      <span class="chip">Advanced</span>
-      <span class="chip">CBT</span>
-      <span class="chip">Clinical</span>
+    <div class="searchRow">
+      <input id="courseSearch" class="input" placeholder="ابحث… مثال: CBT, DBT, إشراف, صدمات">
+      <a class="btn primary" href="https://wa.me/201228867384" target="_blank" rel="noopener">اشترك عبر واتساب</a>
     </div>
   </div>
 
-  <div class="section grid">
-    <div class="card pad">
-      <div class="kicker">Program</div>
-      <h2 class="h2" style="margin-top:8px">برنامج إعداد الأخصائي النفسي</h2>
-      <div class="meta">برنامج متكامل يجهزك للممارسة المهنية (Beginner → Advanced).</div>
-      <div class="row">
-        <a class="btn primary" href="course-setup.html">الدخول للبرنامج</a>
-      </div>
-    </div>
+  <div class="grid" style="margin-top:14px">
+    <a class="tile" id="cbt" data-course="CBT العلاج المعرفي السلوكي برنامج CBT مستوى مبتدئ" href="#" onclick="return false;">
+      <h3 class="tileTitle">CBT — العلاج المعرفي السلوكي</h3>
+      <div class="tileMeta">مستويات: مبتدئ / متوسط / متقدم — محاور + تطبيقات.</div>
+      <div class="tileMeta">للاشتراك: واتساب 01228867384</div>
+    </a>
 
-    <div class="card pad">
-      <div class="kicker">Program</div>
-      <h2 class="h2" style="margin-top:8px">CBT Foundations & Clinical Tools</h2>
-      <div class="meta">أساسيات CBT + تطبيقات عملية داخل الجلسة.</div>
-      <div class="row"><a class="btn ghost" href="#">قريبًا</a></div>
-    </div>
+    <a class="tile" id="dbt" data-course="DBT العلاج الجدلي السلوكي" href="#" onclick="return false;">
+      <h3 class="tileTitle">DBT — العلاج الجدلي السلوكي</h3>
+      <div class="tileMeta">مهارات: Mindfulness / Distress tolerance / Emotion regulation.</div>
+      <div class="tileMeta">للاشتراك: واتساب</div>
+    </a>
 
-    <div class="card pad">
-      <div class="kicker">Program</div>
-      <h2 class="h2" style="margin-top:8px">Clinical Case Formulation</h2>
-      <div class="meta">فورميوليشن عملي وربطه بالخطة العلاجية.</div>
-      <div class="row"><a class="btn ghost" href="#">قريبًا</a></div>
-    </div>
+    <a class="tile" id="positive" data-course="علم النفس الإيجابي Positive psychology" href="#" onclick="return false;">
+      <h3 class="tileTitle">Positive Psychology</h3>
+      <div class="tileMeta">موضوعات مثل PTG والمرونة والامتنان وتطبيقاتها الإكلينيكية.</div>
+      <div class="tileMeta">للاشتراك: واتساب</div>
+    </a>
+
+    <a class="tile" id="supervision" data-course="Clinical supervision إشراف كلينيكي" href="#" onclick="return false;">
+      <h3 class="tileTitle">Clinical Supervision</h3>
+      <div class="tileMeta">جلسات إشراف فردي/جماعي + ملفات متابعة.</div>
+      <div class="tileMeta">للاشتراك: واتساب</div>
+    </a>
   </div>
+</section>
 
-  <div class="section footer">
-    <div class="footer-grid">
-      <div>
-        <div class="kicker">ملاحظة</div>
-        <div class="small">لو ماعندكش كلمة السر، تواصل معنا من صفحة “تواصل معنا”.</div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<script src="gate.js"></script>
-<script>
-  // قفل صفحة الكورسات فقط
-  pcaProtectPage({
-    gateKey: "courses",
-    password: "COURSES-2026",
-    title: "صفحة الكورسات — دخول مخصص"
-  });
-</script>
+<div id="siteFooter"></div>
+<script src="/psychoclubacademy/assets/js/app.js"></script>
 </body>
 </html>
