@@ -4,52 +4,78 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Psycho Club Academy</title>
-  <meta name="description" content="منصة Psycho Club Academy: مقالات علمية ومحتوى منظم." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Psycho Club Academy منصة تدريبية للمحتوى النفسي والكورسات والمقالات." />
+  <link rel="stylesheet" href="/psychoclubacademy/assets/css/styles.css" />
 </head>
-
 <body>
 
-<div class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+<div id="siteHeader"></div>
 
-    <div class="links">
-      <a class="link" href="articles.html">المقالات</a>
-      <a class="link" href="contact.html">تواصل</a>
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div class="card pad">
+      <div class="muted">منصة تدريبية • عربي & English</div>
+      <h1 class="h1" style="margin-top:8px">Psycho Club Academy</h1>
+      <p class="p">
+        كورسات — مقالات — مكتبة — أدوات تدريبية. تصميم منظم، وبحث سريع، ووضع ليلي/نهاري.
+      </p>
+
+      <div class="searchRow">
+        <input class="input" placeholder="ابحث عن كورس… (مثال: CBT / DBT)" onfocus="location.href='/psychoclubacademy/courses.html'">
+        <a class="btn primary" href="/psychoclubacademy/courses.html">استعرض الكورسات</a>
+      </div>
     </div>
 
-    <button id="themeToggle" class="btn" title="تغيير الوضع">🌙</button>
-  </div>
-</div>
-
-<div class="container">
-  <div class="card pad">
-    <span class="badge">Psycho Club Academy</span>
-    <h1 class="h1" style="margin-top:10px">منصة منظمة وبسيطة</h1>
-    <p class="p">ابدأ من المقالات. زر 🌙 يبدّل بين الوضع الداكن والفاتح ويحفظ اختيارك.</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-      <a class="btn primary" href="articles.html">ادخل المقالات</a>
-      <a class="btn" href="contact.html">تواصل</a>
+    <div class="card pad">
+      <div class="muted">لماذا المنصة؟</div>
+      <div class="counterGrid">
+        <div class="counter">
+          <div class="big">+30</div>
+          <div class="small">محاور تدريبية (قابل للزيادة)</div>
+        </div>
+        <div class="counter">
+          <div class="big">+10</div>
+          <div class="small">مقالات منظمة</div>
+        </div>
+        <div class="counter">
+          <div class="big">عربي/EN</div>
+          <div class="small">هيكل جاهز للثنائية</div>
+        </div>
+        <div class="counter">
+          <div class="big">24/7</div>
+          <div class="small">متاح على محركات البحث</div>
+        </div>
+      </div>
+      <p class="p">ملحوظة: السلة/الدفع/العضويات تحتاج نظام مدفوع (نضيفه لاحقًا بأبسط طريقة).</p>
     </div>
   </div>
+</section>
 
+<section class="wrap">
   <div class="grid">
-    <div class="card pad">
-      <h2 class="h2">مقالات علمية</h2>
-      <p class="p">كل مقال في صفحة مستقلة لسهولة القراءة وSEO.</p>
-    </div>
-    <div class="card pad">
-      <h2 class="h2">تصميم نظيف</h2>
-      <p class="p">بدون قوائم بشعة أو تكرار استمبة.</p>
-    </div>
-    <div class="card pad">
-      <h2 class="h2">ثيمين</h2>
-      <p class="p">Dark/Light بضغطة واحدة.</p>
-    </div>
-  </div>
-</div>
+    <a class="tile" href="/psychoclubacademy/courses.html">
+      <h3 class="tileTitle">الكورسات</h3>
+      <div class="tileMeta">قائمة منظمة + بحث + روابط واتساب للاشتراك.</div>
+    </a>
 
-<script src="app.js"></script>
+    <a class="tile" href="/psychoclubacademy/articles.html">
+      <h3 class="tileTitle">المقالات العلمية</h3>
+      <div class="tileMeta">كل مقال في صفحة مستقلة (SEO أفضل).</div>
+    </a>
+
+    <a class="tile" href="/psychoclubacademy/library.html">
+      <h3 class="tileTitle">المكتبة</h3>
+      <div class="tileMeta">كتب ومراجع مجانية (مع تنويه حقوق الملكية).</div>
+    </a>
+
+    <a class="tile" href="/psychoclubacademy/contact.html">
+      <h3 class="tileTitle">تواصل معنا</h3>
+      <div class="tileMeta">واتساب + إنستا باي/فودافون كاش لاحقًا حسب نظام البيع.</div>
+    </a>
+  </div>
+</section>
+
+<div id="siteFooter"></div>
+<script src="/psychoclubacademy/assets/js/app.js"></script>
 </body>
 </html>
