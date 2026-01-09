@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>النمو بعد الصدمة (PTG) | Psycho Club Academy</title>
+  <meta name="description" content="شرح مفهوم Post-Traumatic Growth في علم النفس الإيجابي." />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <meta property="og:image" content="/psychoclubacademy/assets/img/ptg-sunset.jpg" />
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+
+    <div class="links">
+      <a class="link" href="../articles.html">المقالات</a>
+      <a class="link" href="../contact.html">تواصل</a>
+    </div>
+
+    <button id="themeToggle" class="btn" title="تغيير الوضع">🌙</button>
+  </div>
+</div>
+
+<div class="articleWrap">
+
+  <div class="heroImg">
+    <img src="/psychoclubacademy/assets/img/ptg-sunset.jpg" alt="النمو بعد الصدمة" />
+  </div>
+
+  <div class="card pad" style="margin-top:14px">
+    <span class="badge">Positive Psychology • PTG</span>
+    <h1 class="h1" style="margin-top:10px">النمو بعد الصدمة (PTG)</h1>
+
+    <div class="quote">
+      "قد لا أملك انتصارات مدهشة ، لكنني أستطيع ادهاشك بهزائم خرجت منها حياً.."✨✨
+    </div>
+
+    <p class="p">
+      في علم النفس الإيجابي يوجد مفهوم مهم جدًا وهو مصطلح <b>PTG</b> — <b>Post-traumatic growth</b> (النمو بعد الصدمة).
+    </p>
+
+    <p class="p">
+      كثير منا يتعرض لصدمات: خذلان، إساءة، فقد، خسارة… ورغم اختلاف أثرها علينا، فإن إعادة النظر للصدمة بوعي
+      قد تفتح مساحة للنمو والتطور.
+    </p>
+
+    <h2 class="h2" style="margin-top:16px">ملامح النمو الإيجابي بعد الصدمة</h2>
+    <ul class="list">
+      <li><b>تقدير جديد للحياة:</b> امتنان لأشياء بسيطة (أسرة، شغل، صداقة…).</li>
+      <li><b>عمق أكبر في العلاقات:</b> جودة وصدق بدل العدد والقبول الزائف.</li>
+      <li><b>قوة داخلية:</b> قبول الألم بوعي بدل إنكار أو تزييف.</li>
+      <li><b>دور أكثر فاعلية:</b> اختيار دور مؤثر بدل دور الضحية.</li>
+      <li><b>معنى أعمق:</b> نمو روحي ووجودي وعلاقة أقوى بالله وبالنفس.</li>
+    </ul>
+
+    <p class="p" style="margin-top:14px">
+      مرور الإنسان بصدمة ليس نهاية الدنيا؛ قد يكون بداية أكثر نضجًا وصدقًا.
+      <br><b>«لا يُكلّف الله نفسًا إلا وسعها»</b>
+    </p>
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+      <a class="btn" href="../articles.html">← رجوع للمقالات</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="../app.js"></script>
+</body>
+</html>
