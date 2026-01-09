@@ -1,224 +1,78 @@
-assets/img/ptg-sunset.jpg<!doctype html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
   <title>النمو بعد الصدمة (PTG) | Psycho Club Academy</title>
 
-  <meta name="description" content="شرح مفهوم النمو بعد الصدمة Post-Traumatic Growth في علم النفس الإيجابي، وكيف يمكن للهزائم أن تتحول إلى نضج وقوة ومعنى أعمق للحياة." />
+  <meta name="description" content="مقال عن Post-Traumatic Growth (PTG) في علم النفس الإيجابي." />
 
-  <meta property="og:title" content="النمو بعد الصدمة (PTG)" />
-  <meta property="og:description" content="قد لا أملك انتصارات مدهشة، لكنني أستطيع إدهاشك بهزائم خرجت منها حيًا." />
-  <meta property="og:image" content="../assets/img/ptg-sunset.jpg" />
-
+  <meta property="og:image" content="/psychoclubacademy/assets/img/ptg-sunset.jpg" />
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
-    .article-wrap{
-      max-width:900px;
-      margin:30px auto;
-      padding:20px;
-    }
-    .article-hero img{
-      width:100%;
-      border-radius:24px;
-      border:1px solid rgba(255,255,255,.15);
-      box-shadow:0 20px 60px rgba(0,0,0,.55);
-    }
-    .article-box{
-      margin-top:20px;
-      padding:22px;
-      border-radius:24px;
-      border:1px solid rgba(255,255,255,.15);
-      background:rgba(255,255,255,.05);
-    }
-    .article-box h1{
-      font-size:30px;
-      font-weight:900;
-      line-height:1.4;
-    }
-    .article-box h2{
-      margin-top:22px;
-      font-size:22px;
-      font-weight:900;
-    }
-    .article-box p{
-      margin-top:14px;
-      line-height:2;
-      font-size:16px;
-    }
-    .quote{
-      margin:20px 0;
-      padding:18px;
-      border-radius:22px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.18);
-      font-weight:900;
-      font-size:18px;
-    }
-    .list{
-      margin-top:14px;
-      padding:0;
-      list-style:none;
-    }
-    .list li{
-      margin-top:12px;
-      padding:14px;
-      border-radius:20px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.14);
-      line-height:1.9;
-    }
-    .footer-note{
-      margin-top:24px;
-      padding:16px;
-      border-radius:20px;
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.12);
-      font-size:14px;
-      line-height:1.9;
-      opacity:.85;
-    }
-    .back{
-      margin-top:20px;
-      display:inline-block;
-      padding:10px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.2);
-      text-decoration:none;
-      font-weight:900;
-      color:white;
-      background:rgba(255,255,255,.05);
-    }
+    .wrap{width:min(900px,92vw);margin:0 auto;padding:18px 0}
+    .imgBox{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 60px rgba(0,0,0,.55)}
+    .imgBox img{width:100%;display:block;height:auto}
+    .box{margin-top:14px;padding:18px;border-radius:24px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
+    .quote{margin:12px 0;padding:14px;border-radius:20px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;line-height:2}
+    .bul{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:10px}
+    .bul li{padding:12px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);line-height:1.95}
   </style>
 </head>
 
-<body class="page-articles">
+<body>
 
 <div class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="../index.html">
-      <div class="logo"></div>
-      <span>Psycho Club Academy</span>
-    </a>
+    <a class="brand" href="../index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+
     <div class="links">
       <a class="link" href="../articles.html">المقالات العلمية</a>
       <a class="link" href="../library.html">المكتبة</a>
       <a class="link" href="../contact.html">تواصل معنا</a>
     </div>
+
+    <button id="themeToggle" class="btn ghost" title="تغيير الوضع">🌙</button>
   </div>
 </div>
 
-<div class="article-wrap">
-
-  <div class="article-hero">
-    <img src="../assets/img/ptg-sunset.jpg" alt="النمو بعد الصدمة" />
+<div class="wrap">
+  <div class="imgBox">
+    <!-- مسار مطلق مضمون على GitHub Pages -->
+    <img src="/psychoclubacademy/assets/img/ptg-sunset.jpg" alt="النمو بعد الصدمة">
   </div>
 
-  <div class="article-box">
-    <h1>النمو بعد الصدمة (PTG)</h1>
+  <div class="box">
+    <span class="badge">Positive Psychology</span>
+    <h1 class="h1" style="margin-top:12px;font-size:28px">النمو بعد الصدمة (PTG)</h1>
 
-    <div class="quote">
-      "قد لا أملك انتصارات مدهشة، لكنني أستطيع إدهاشك بهزائم خرجت منها حيًا.." ✨
-    </div>
+    <div class="quote">"قد لا أملك انتصارات مدهشة ، لكنني أستطيع ادهاشك بهزائم خرجت منها حياً.."✨✨</div>
 
-    <p>
-      في علم النفس الإيجابي يوجد مفهوم مهم جدًا يُعرف باسم
-      <b>Post-Traumatic Growth</b> أو <b>النمو بعد الصدمة (PTG)</b>.
-      وهو لا يعني أن الصدمة أمر إيجابي، ولا يعني إنكار الألم،
-      بل يشير إلى التحولات الإيجابية التي قد تحدث لدى بعض الأشخاص
-      بعد المرور بتجارب نفسية قاسية.
+    <p class="p">
+      في مفهوم مهم جدًا في علم النفس الإيجابي وهو مصطلح <b>PTG</b> — <b>Post-traumatic growth</b> (النمو بعد الصدمة).
     </p>
 
-    <p>
-      كثير منا تعرض لصدمات نفسية قوية:
-      خذلان من شخص نحبه، إساءة ممن وثقنا به،
-      فقد شخص عزيز، أو خسارة شيء غالٍ.
-      ورغم اختلاف الصدمات وتأثيرها،
-      فإن النظر للصدمة من زاوية أعمق
-      قد يساعد الفرد على النمو والتطور.
+    <p class="p">
+      كتير مننا اتعرض لصدمات نفسية قوية: خذلان، إساءة، فقد، خسارة… ومع اختلاف الصدمات وتأثيرها،
+      فإن النظر للصدمة من زاوية أعمق قد يساعد الفرد على النمو والتطور.
     </p>
 
-    <h2>لماذا نشعر أننا تغيرنا بعد الصدمة؟</h2>
-
-    <p>
-      بعد التعرض للصدمة تحدث تحولات داخلية كبيرة
-      في أنظمة نفسية مسؤولة عن مشاعرنا،
-      قراراتنا، سلوكياتنا، علاقاتنا، واختياراتنا.
-      الصدمة قد تُحدث إعادة تشكيل كاملة لبنية الشخص
-      داخليًا وخارجيًا.
-    </p>
-
-    <p>
-      ولهذا يشعر الكثيرون بفرق واضح بين
-      شخصياتهم قبل وبعد الصدمة،
-      لأن الأثر لا يكون مجرد ألم،
-      بل مساحة لاكتشاف أعمق للذات.
-    </p>
-
-    <h2>ملامح النمو الإيجابي بعد الصدمة</h2>
-
-    <ul class="list">
-      <li>
-        <b>تقدير جديد للحياة:</b>
-        الامتنان لأشياء بسيطة لم تكن محل انتباه من قبل
-        مثل الأسرة، العلاقات، والعمل.
-      </li>
-
-      <li>
-        <b>عمق أكبر في العلاقات:</b>
-        الاهتمام بالصدق والراحة النفسية
-        بدل السعي للعدد أو القبول على حساب الذات.
-      </li>
-
-      <li>
-        <b>إحساس بالقوة:</b>
-        قوة نابعة من قبول الألم
-        وليس إنكاره أو تزييف تجاوزه.
-      </li>
-
-      <li>
-        <b>اختيار دور أكثر فاعلية:</b>
-        التخلي عن عقلية الضحية
-        واختيار أن يكون الإنسان مؤثرًا في حياته
-        وحياة من حوله.
-      </li>
-
-      <li>
-        <b>معنى أعمق للحياة:</b>
-        نمو روحي ووجودي
-        وعلاقة أقوى مع الله ومع النفس.
-      </li>
+    <h2 class="h2" style="margin-top:16px">ملامح النمو الإيجابي بعد الصدمة</h2>
+    <ul class="bul">
+      <li><b>تقدير جديد للحياة:</b> امتنان لأشياء كانت عادية قبل كده (أسرة، زوج/زوجة، أبناء، شغل، صداقة…).</li>
+      <li><b>عمق أكبر في العلاقات:</b> الاهتمام بالصدق والراحة بدل العدد والقبول على حساب النفس.</li>
+      <li><b>شعور بالقوة:</b> قبول الألم بوعي بدل إنكاره أو تزييف التجاوز.</li>
+      <li><b>اختيار دور مؤثر:</b> “الهزة” قد تكشف قدرات وتدفع لدور أكثر فاعلية.</li>
+      <li><b>معنى أعمق:</b> نمو روحي ووجودي وعلاقة أقوى بالله وبالنفس.</li>
     </ul>
 
-    <h2>كلمة أخيرة</h2>
-
-    <p>
-      بعد الصدمات لسنا كما كنا،
-      العالم من حولنا يتغير
-      وداخلنا يتغير أيضًا.
-      وهذا التغير هو أحد معاني
-      النضج والتطور النفسي.
-    </p>
-
-    <p>
-      مرور الإنسان بصدمة
-      ليس نهاية الطريق،
-      بل قد يكون بداية حياة
-      أكثر صدقًا ووعيًا.
-      <br>
-      <b>«لا يُكلف الله نفسًا إلا وسعها»</b>
-    </p>
-
-    <div class="footer-note">
-      هذا المقال تثقيفي ولا يغني عن التقييم أو العلاج النفسي المتخصص عند الحاجة.
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+      <a class="btn ghost" href="../articles.html">← رجوع للمقالات</a>
     </div>
-
-    <a class="back" href="../articles.html">← العودة إلى المقالات</a>
   </div>
-
 </div>
 
+<script src="../app.js"></script>
 </body>
 </html>
