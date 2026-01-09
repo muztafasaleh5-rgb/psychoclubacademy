@@ -3,64 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>المقالات العلمية | Psycho Club Academy</title>
-  <meta name="description" content="مقالات علمية وتطبيقية في علم النفس: صياغة الحالة، CBT، والتقييم." />
+  <title>المقالات | Psycho Club Academy</title>
+  <meta name="description" content="مقالات علمية منظمة." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="page-articles">
+
+<body>
 
 <div class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><div class="logo"></div><span>Psycho Club Academy</span></a>
+
     <div class="links">
-      <a class="link" href="index.html">الرئيسية</a>
-      <a class="link" href="books.html">الكتب</a>
-      <a class="link" href="library.html">المكتبة</a>
-      <a class="link" href="about.html">من نحن</a>
-      <a class="link" href="contact.html">تواصل معنا</a>
+      <a class="link" href="articles.html">المقالات</a>
+      <a class="link" href="contact.html">تواصل</a>
     </div>
+
+    <button id="themeToggle" class="btn" title="تغيير الوضع">🌙</button>
   </div>
 </div>
 
 <div class="container">
-
-  <div class="feature">
-    <span class="badge">Scientific Articles</span>
-    <h1 class="h1" style="margin-top:12px">المقالات العلمية</h1>
-    <p class="p">عرض “مجلة”: مقال مميز بالأعلى + مقالات كبطاقات. (دي صفحة مختلفة فعلًا عن الكتب/المكتبة)</p>
-
-    <div class="row">
-      <a class="btn primary" href="articles/what-is-case-formulation.html">اقرأ المقال المميز</a>
-      <a class="btn ghost" href="library.html">أدوات مجانية</a>
-    </div>
+  <div class="card pad">
+    <span class="badge">Articles</span>
+    <h1 class="h1" style="margin-top:10px">المقالات</h1>
+    <p class="p">كل مقال في صفحة مستقلة. اضغط على أي بطاقة للقراءة.</p>
   </div>
 
-  <div class="section grid">
-    <a class="postCard" href="articles/what-is-case-formulation.html">
-      <div class="kicker">Featured</div>
-      <h2 class="h2" style="margin-top:8px">ما هي صياغة الحالة Case Formulation؟</h2>
-      <div class="meta">شرح عملي + نموذج 5P + خطوات تطبيق وأخطاء شائعة.</div>
-    </a>
-
-    <a class="postCard" href="#">
-      <div class="kicker">CBT</div>
-      <h2 class="h2" style="margin-top:8px">Pivot & Elicit (قريبًا)</h2>
-      <div class="meta">تطبيق عملي على جلسة خطوة بخطوة.</div>
-    </a>
-
-    <a class="postCard" href="#">
-      <div class="kicker">Documentation</div>
-      <h2 class="h2" style="margin-top:8px">SOAP Notes (قريبًا)</h2>
-      <div class="meta">قالب + أمثلة صحيحة وأخطاء شائعة.</div>
+  <div class="grid">
+    <a class="card pad" href="articles/ptg-growth.html" style="text-decoration:none;color:inherit">
+      <h2 class="h2">النمو بعد الصدمة (PTG)</h2>
+      <p class="p">كيف قد تتحول الهزيمة إلى نضج: امتنان، قوة، علاقات أعمق، ومعنى.</p>
+      <div style="margin-top:10px"><span class="badge">Positive Psychology</span></div>
     </a>
   </div>
-
-  <div class="section footer">
-    <div class="footer-grid">
-      <div><div class="kicker">ملاحظة</div><div class="small">المقالات صفحات مستقلة أفضل لـ SEO.</div></div>
-    </div>
-  </div>
-
 </div>
+
+<script src="app.js"></script>
 </body>
 </html>
